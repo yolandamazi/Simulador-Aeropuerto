@@ -1,26 +1,36 @@
+import static java.lang.Thread.sleep;
 import java.util.ArrayList;
 import java.util.concurrent.*;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.Semaphore;
+import java.util.Queue;
+import java.util.LinkedList;
+import java.util.Random;
 
 public class Aeropuerto {
     //Atributos
+    private Random r;
     private String ciudad;
     private int pasajeros;
     private ArrayList<Avion> hangar = new ArrayList<>();
-    private ArrayList<Avion> areaRodaje = new ArrayList<>();
-    private ConcurrentLinkedQueue<Avion> areaEstacionamiento = new ConcurrentLinkedQueue<>();
+    private ArrayList<Avion> areaEstacionamiento = new ArrayList<>();
     private ArrayList<Avion> aerovia = new ArrayList<>();
-    private Semaphore[] puertasLibres = new Semaphore[4];
-    private Semaphore puertaEmbarque = new Semaphore(1);
-    private Semaphore puertaDesembarque = new Semaphore(1);
+    private ArrayList<Avion> areaRodaje = new ArrayList<>();
+     
+    //Puertas de embarque con estructura FIFO
+    private Semaphore puertasLibres = new Semaphore(4, true);
+    private Semaphore puertaEmbarque = new Semaphore(1, true);
+    private Avion avionPuertaEmbarque;
+    private Semaphore puertaDesembarque = new Semaphore(1, true);
+    private Avion avionPuertaDesembarque;
+    
     
     //Constructor
-
-    public Aeropuerto(String ciudad, int pasajeros) {
+    public Aeropuerto(String ciudad) {
         this.ciudad = ciudad;
-        this.pasajeros = pasajeros;
-        for (int i=0; i<4 ; i++){
-            puertasLibres[i] = new Semaphore(1);
-        }
+        this.r = new Random();
+        
     }
     
     //Getters y Setters
@@ -39,6 +49,7 @@ public class Aeropuerto {
     public void setPasajeros(int pasajeros) {
         this.pasajeros = pasajeros;
     }
+    
 
     public ArrayList<Avion> getHangar() {
         return hangar;
@@ -56,14 +67,6 @@ public class Aeropuerto {
         this.areaRodaje = areaRodaje;
     }
 
-    public ConcurrentLinkedQueue<Avion> getAreaEstacionamiento() {
-        return areaEstacionamiento;
-    }
-
-    public void setAreaEstacionamiento(ConcurrentLinkedQueue<Avion> areaEstacionamiento) {
-        this.areaEstacionamiento = areaEstacionamiento;
-    }
-
     public ArrayList<Avion> getAerovia() {
         return aerovia;
     }
@@ -74,6 +77,63 @@ public class Aeropuerto {
     
     
     //Metodos
+    public void embarcar (Avion avion){
+        try {
+            if (avion.getEstado().equals("Embarque") && (puertaEmbarque.availablePermits() > 0)){
+                puertaEmbarque.acquire();
+                avionPuertaEmbarque = avion;
+            } else {
+                puertasLibres.acquire();
+            }
+            
+            salirAreaEstacionamiento(avion);
+            
+            int intentos = 1;
+            while ((avion.getCapacidadMaxima() > avion.getPasajeros()) && intentos <= 3){
+                if (pasajeros <= (avion.getCapacidadMaxima()) - avion.getPasajeros()){
+                    avion.setPasajeros(avion.getPasajeros() + pasajeros);
+                    pasajeros = 0;
+                    
+                    // Tiempo de espera si no hay pasajeros suficientes
+                    try{
+                        avion.sleep(r.nextInt(5000-1000+1)+1000);
+                    } catch (InterruptedException e){
+                    }
+                } else {
+                    int subidaPasajeros = (avion.getCapacidadMaxima() - avion.getPasajeros());
+                    avion.setPasajeros(avion.getPasajeros() + subidaPasajeros);
+                    pasajeros -= subidaPasajeros;
+                }
+                
+                // Tiempo de transferencia
+                try{
+                    avion.sleep(r.nextInt(3000-1000+1)+1000);
+                } catch (InterruptedException e){
+                }
+                intentos++;
+            }
+            
+            if (avion.getEstado().equals("Embarque") && (avion.getMyId().equals(avionPuertaEmbarque.getMyId()))){
+                puertaEmbarque.release();
+            } else {
+                puertasLibres.release();
+            }
+            
+        } catch (InterruptedException e){
+        }
+    }
+    
+    public void desembarcar (Avion avion){
+        try{
+            if (avion.getEstado().equals("Desembarque") && (puertaDesembarque.availablePermits() > 0)){
+                puertaDesembarque.acquire();
+            } else {
+                puertasLibres.acquire();
+            }
+        } catch (InterruptedException e){
+        }
+    }
+    
     public void entrarHangar (Avion avion){
         hangar.add(avion);
     }
@@ -82,59 +142,40 @@ public class Aeropuerto {
         hangar.remove(avion);
     }
     
+    public void entrarAreaRodaje (Avion avion){
+        areaRodaje.add(avion);
+        //Comprobacion pilotos
+        try{
+            sleep(r.nextInt(5000-1000+1)+1000);
+        } catch (InterruptedException e){
+        }
+    }
+    
+    public void salirAreaRodaje (Avion avion) {
+        areaRodaje.remove(avion);
+    }
+    
     public void entrarAreaEstacionamiento (Avion avion){
-        areaEstacionamiento.offer(avion);
-        synchronized(areaEstacionamiento){
-            areaEstacionamiento.notifyAll();
-        }
+        salirHangar(avion);
+        areaEstacionamiento.add(avion);
+        
     }
     
-    public Avion salirAreaEstacionamiento () {
-        Avion avion = areaEstacionamiento.poll();
-        try {
-            if (avion == null){
-                synchronized(areaEstacionamiento){
-                    areaEstacionamiento.wait();
-                }
-            }
-        } catch (InterruptedException e){
-        }
-        return avion;
+    public void salirAreaEstacionamiento (Avion avion) { 
+        areaEstacionamiento.remove(avion);
     }
     
-    public void entrarPuertaEmbarque (){
-        try {
-            puertaEmbarque.acquire();
+    public void entrarAerovia(Avion avion){
+        aerovia.add(avion);
+        // Quedarse en autovia
+        try{
+            sleep(r.nextInt(30000-15000+1)+15000);
         } catch (InterruptedException e){
         }
     }
     
-    public void salirPuertaEmbarque (){
-        puertaEmbarque.release();
-    }
-    
-    public void entrarPuertaDesembarque (){
-        try {
-            puertaDesembarque.acquire();
-        } catch (InterruptedException e){
-        }
-    }
-    
-    public void salirPuertaDesembarque (){
-        puertaDesembarque.release();
-    }
-    
-    public int entrarPuertasLibres(){
-        for (int i=0; i < puertasLibres.length ; i++){
-            if (puertasLibres[i].tryAcquire()){
-                return i;
-            }
-        }
-        return -1;
-    }
-    
-    public void salirPuertasLibres(int i){
-        puertasLibres[i].release();
+    public void salirAerovia(Avion avion){
+        aerovia.remove(avion);
     }
     
 }

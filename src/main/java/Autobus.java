@@ -9,7 +9,6 @@ public class Autobus extends Thread {
     private Random r;
     
     //Constructor
-
     public Autobus(String id, int pasajeros, String lugar, Aeropuerto aeropuerto, Random r) {
         this.r = new Random();
         this.id = "B-" + String.valueOf(r.nextInt(9999-0000+1)+0000);
