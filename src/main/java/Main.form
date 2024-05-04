@@ -46,23 +46,27 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jButtonIniciar" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jPanel5" alignment="1" max="32767" attributes="0"/>
+                              <Component id="jButtonPausar" alignment="1" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jButtonRenaudar" max="32767" attributes="0"/>
+                              <Component id="jPanel7" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jTextFieldTotalMoney" max="32767" attributes="0"/>
-                      </Group>
-                      <Component id="jPanel5" alignment="1" max="32767" attributes="0"/>
-                      <Component id="jButtonPause" alignment="1" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
+                          <Component id="jTextFieldAeroviaMadrid" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                          <Component id="jTextFieldCompletedOrders" max="32767" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jTextFieldAeroviaBarcelona" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="jButtonResume" max="32767" attributes="0"/>
-                      <Component id="jPanel7" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -72,22 +76,24 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButtonResume" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButtonPause" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="jButtonRenaudar" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonPausar" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
-                      <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jPanel5" max="32767" attributes="0"/>
+                      <Component id="jPanel7" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextFieldTotalMoney" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextFieldAeroviaMadrid" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextFieldCompletedOrders" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextFieldAeroviaBarcelona" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButtonIniciar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -115,9 +121,9 @@
                               </Group>
                               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextFieldPendingP2S" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldPendingP3S" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldPendingP1S" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldGate2Madrid" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldGate3Madrid" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldGate1Madrid" alignment="1" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -127,54 +133,50 @@
                               </Group>
                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextFieldCompletedOrdersS" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldOrdersP1S" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldOrdersP2S" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldGate5Madrid" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldGate6Madrid" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldGate4Madrid" alignment="1" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextFieldCookP3S" max="32767" attributes="0"/>
+                              <Component id="jTextFieldRodajeMadrid" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jTextFieldOrdersP3S" max="32767" attributes="0"/>
+                              <Component id="jTextFieldTallerMadrid" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextFieldCookP1S" max="32767" attributes="0"/>
+                              <Component id="jTextFieldAEstacionamientoMadrid" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jTextFieldTotalMoneyS" min="-2" pref="362" max="-2" attributes="0"/>
+                              <Component id="jTextFieldHangarMadrid" min="-2" pref="362" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel19" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="jTextFieldCookP3S2" alignment="0" pref="149" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldCookP3S1" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldCookP3S3" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldPista2Madrid" alignment="0" pref="149" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldPista1Madrid" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel22" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel24" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jTextFieldCookP3S6" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldCookP3S5" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldCookP3S4" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldPista4Madrid" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldPista3Madrid" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
@@ -183,7 +185,7 @@
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jTextFieldWaitingOutside" min="-2" pref="92" max="-2" attributes="0"/>
+                                      <Component id="jTextFieldTransfersAeropuertoMadrid" min="-2" pref="92" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -192,9 +194,9 @@
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jTextFieldWaitingInside" min="-2" pref="98" max="-2" attributes="0"/>
+                                      <Component id="jTextFieldTransfersCiudadMadrid" min="-2" pref="98" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextFieldCookP2S" min="-2" pref="194" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldPasajerosMadrid" min="-2" pref="194" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -215,84 +217,72 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldWaitingInside" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldWaitingOutside" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldTransfersCiudadMadrid" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldTransfersAeropuertoMadrid" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldCookP2S" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldPasajerosMadrid" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldTotalMoneyS" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldHangarMadrid" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldOrdersP3S" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldTallerMadrid" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldCookP1S" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldAEstacionamientoMadrid" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldOrdersP2S" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldPendingP1S" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldGate4Madrid" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldGate1Madrid" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel25" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel36" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTextFieldCompletedOrdersS" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldGate5Madrid" min="-2" max="-2" attributes="0"/>
                           <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="jTextFieldPendingP2S" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldGate2Madrid" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel37" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel26" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldPendingP3S" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldGate3Madrid" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel35" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldOrdersP1S" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldGate6Madrid" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldCookP3S" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldRodajeMadrid" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldCookP3S1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldPista1Madrid" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldCookP3S4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldPista3Madrid" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextFieldCookP3S2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldCookP3S3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jTextFieldPista2Madrid" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jTextFieldCookP3S5" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextFieldCookP3S6" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jTextFieldPista4Madrid" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -315,53 +305,53 @@
                 <Property name="text" type="java.lang.String" value="Taller:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP1S">
+            <Component class="javax.swing.JTextField" name="jTextFieldAEstacionamientoMadrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldOrdersP1S">
+            <Component class="javax.swing.JTextField" name="jTextFieldGate6Madrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldPendingP1S">
-              <Properties>
-                <Property name="editable" type="boolean" value="false"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldPendingP1SActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP2S">
-              <Properties>
-                <Property name="editable" type="boolean" value="false"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldOrdersP2S">
+            <Component class="javax.swing.JTextField" name="jTextFieldGate1Madrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldOrdersP2SActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldGate1MadridActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldPendingP2S">
+            <Component class="javax.swing.JTextField" name="jTextFieldPasajerosMadrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S">
+            <Component class="javax.swing.JTextField" name="jTextFieldGate4Madrid">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldGate4MadridActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldGate2Madrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldOrdersP3S">
+            <Component class="javax.swing.JTextField" name="jTextFieldRodajeMadrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldPendingP3S">
+            <Component class="javax.swing.JTextField" name="jTextFieldTallerMadrid">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldGate3Madrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
@@ -376,20 +366,23 @@
                 <Property name="text" type="java.lang.String" value="&#xc1;rea de Rodaje:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCompletedOrdersS">
+            <Component class="javax.swing.JTextField" name="jTextFieldGate5Madrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldTotalMoneyS">
+            <Component class="javax.swing.JTextField" name="jTextFieldHangarMadrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldHangarMadridActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel8">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Nova" size="14" style="3"/>
+                  <Font name="Arial Nova" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Aeropuerto de Madrid"/>
               </Properties>
@@ -399,7 +392,7 @@
                 <Property name="text" type="java.lang.String" value="Transfers Aeropuerto:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldWaitingOutside">
+            <Component class="javax.swing.JTextField" name="jTextFieldTransfersAeropuertoMadrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
@@ -409,12 +402,12 @@
                 <Property name="text" type="java.lang.String" value="Transfers Ciudad:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldWaitingInside">
+            <Component class="javax.swing.JTextField" name="jTextFieldTransfersCiudadMadrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldWaitingInsideActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldTransfersCiudadMadridActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel19">
@@ -427,39 +420,24 @@
                 <Property name="text" type="java.lang.String" value="Pista 2:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S1">
+            <Component class="javax.swing.JTextField" name="jTextFieldPista1Madrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S2">
+            <Component class="javax.swing.JTextField" name="jTextFieldPista2Madrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S3">
+            <Component class="javax.swing.JTextField" name="jTextFieldPista3Madrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S4">
+            <Component class="javax.swing.JTextField" name="jTextFieldPista4Madrid">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S5">
-              <Properties>
-                <Property name="editable" type="boolean" value="false"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S6">
-              <Properties>
-                <Property name="editable" type="boolean" value="false"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel21">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Pista 3:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel22">
@@ -470,11 +448,6 @@
             <Component class="javax.swing.JLabel" name="jLabel23">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Pista 4:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel24">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Pista 5:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel25">
@@ -511,15 +484,15 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Aerov&#xed;a Madrd-Barcelona:"/>
+            <Property name="text" type="java.lang.String" value="Aerov&#xed;a Madrid-Barcelona:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextFieldCompletedOrders">
+        <Component class="javax.swing.JTextField" name="jTextFieldAeroviaBarcelona">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldCompletedOrdersActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldAeroviaBarcelonaActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
@@ -527,15 +500,15 @@
             <Property name="text" type="java.lang.String" value="Aerov&#xed;a Barcelona-Madrid:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextFieldTotalMoney">
+        <Component class="javax.swing.JTextField" name="jTextFieldAeroviaMadrid">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldTotalMoneyActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldAeroviaMadridActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButtonPause">
+        <Component class="javax.swing.JButton" name="jButtonPausar">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="cc" red="cc" type="rgb"/>
@@ -546,10 +519,10 @@
             <Property name="text" type="java.lang.String" value="Pausar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonPauseActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonPausarActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButtonResume">
+        <Component class="javax.swing.JButton" name="jButtonRenaudar">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="cc" red="cc" type="rgb"/>
@@ -560,7 +533,7 @@
             <Property name="text" type="java.lang.String" value="Renaudar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonResumeActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonRenaudarActionPerformed"/>
           </Events>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel7">
@@ -584,9 +557,9 @@
                               </Group>
                               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextFieldPendingP2S2" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldPendingP3S2" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldPendingP1S2" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldGate2Barcelona" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldGate3Barcelona" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldGate1Barcelona" alignment="1" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -596,54 +569,50 @@
                               </Group>
                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextFieldCompletedOrdersS2" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldOrdersP1S2" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldOrdersP2S2" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldGate5Barcelona" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldGate6Barcelona" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldGate4Barcelona" alignment="1" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextFieldCookP3S14" max="32767" attributes="0"/>
+                              <Component id="jTextFieldRodajeBarcelona" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jTextFieldOrdersP3S2" max="32767" attributes="0"/>
+                              <Component id="jTextFieldTallerBarcelona" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextFieldCookP1S2" max="32767" attributes="0"/>
+                              <Component id="jTextFieldAEstacionamientoBarcelona" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jTextFieldTotalMoneyS2" min="-2" pref="362" max="-2" attributes="0"/>
+                              <Component id="jTextFieldHangarBarcelona" min="-2" pref="362" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel33" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel55" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel56" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="jTextFieldCookP3S16" alignment="0" pref="149" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldCookP3S15" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldCookP3S17" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldPista2Barcelona" alignment="0" pref="149" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldPista1Barcelona" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel57" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel58" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel59" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jTextFieldCookP3S20" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldCookP3S19" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldCookP3S18" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldPista4Barcelona" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldPista3Barcelona" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
@@ -652,7 +621,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jTextFieldWaitingOutside2" min="-2" pref="92" max="-2" attributes="0"/>
+                                      <Component id="jTextFieldTransfersAeropuertoBarcelona" min="-2" pref="92" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jLabel27" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -661,9 +630,9 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jTextFieldWaitingInside2" min="-2" pref="98" max="-2" attributes="0"/>
+                                      <Component id="jTextFieldTransfersCiudadBarcelona" min="-2" pref="98" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextFieldCookP2S2" alignment="0" min="-2" pref="194" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldPasajerosBarcelona" alignment="0" min="-2" pref="194" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -684,84 +653,72 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel32" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldWaitingInside2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldWaitingOutside2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldTransfersCiudadBarcelona" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldTransfersAeropuertoBarcelona" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel27" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldCookP2S2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldPasajerosBarcelona" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel28" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldTotalMoneyS2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldHangarBarcelona" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldOrdersP3S2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldTallerBarcelona" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldCookP1S2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldAEstacionamientoBarcelona" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldOrdersP2S2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldPendingP1S2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldGate4Barcelona" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldGate1Barcelona" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel60" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel64" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel61" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldCompletedOrdersS2" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldGate5Barcelona" min="-2" max="-2" attributes="0"/>
                           <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="jTextFieldPendingP2S2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldGate2Barcelona" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel65" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel61" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldPendingP3S2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldGate3Barcelona" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel62" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel63" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldOrdersP1S2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldGate6Barcelona" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldCookP3S14" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldRodajeBarcelona" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel31" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldCookP3S15" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldPista1Barcelona" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel33" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldCookP3S18" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldPista3Barcelona" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel57" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextFieldCookP3S16" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel55" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel58" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel56" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldCookP3S17" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel59" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="jTextFieldPista2Barcelona" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel55" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel58" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jTextFieldCookP3S19" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextFieldCookP3S20" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jTextFieldPista4Barcelona" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -784,53 +741,56 @@
                 <Property name="text" type="java.lang.String" value="Taller:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP1S2">
+            <Component class="javax.swing.JTextField" name="jTextFieldAEstacionamientoBarcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldOrdersP1S2">
+            <Component class="javax.swing.JTextField" name="jTextFieldGate6Barcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldPendingP1S2">
-              <Properties>
-                <Property name="editable" type="boolean" value="false"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldPendingP1S2ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP2S2">
-              <Properties>
-                <Property name="editable" type="boolean" value="false"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldOrdersP2S2">
+            <Component class="javax.swing.JTextField" name="jTextFieldGate1Barcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldOrdersP2S2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldGate1BarcelonaActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldPendingP2S2">
+            <Component class="javax.swing.JTextField" name="jTextFieldPasajerosBarcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S14">
+            <Component class="javax.swing.JTextField" name="jTextFieldGate4Barcelona">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldGate4BarcelonaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldGate2Barcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldOrdersP3S2">
+            <Component class="javax.swing.JTextField" name="jTextFieldRodajeBarcelona">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldRodajeBarcelonaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldTallerBarcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldPendingP3S2">
+            <Component class="javax.swing.JTextField" name="jTextFieldGate3Barcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
@@ -845,12 +805,12 @@
                 <Property name="text" type="java.lang.String" value="&#xc1;rea de Rodaje:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCompletedOrdersS2">
+            <Component class="javax.swing.JTextField" name="jTextFieldGate5Barcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldTotalMoneyS2">
+            <Component class="javax.swing.JTextField" name="jTextFieldHangarBarcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
@@ -858,7 +818,7 @@
             <Component class="javax.swing.JLabel" name="jLabel10">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Nova" size="14" style="3"/>
+                  <Font name="Arial Nova" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Aeropuerto de Barcelona"/>
               </Properties>
@@ -868,22 +828,25 @@
                 <Property name="text" type="java.lang.String" value="Transfers Aeropuerto:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldWaitingOutside2">
+            <Component class="javax.swing.JTextField" name="jTextFieldTransfersAeropuertoBarcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldTransfersAeropuertoBarcelonaActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel32">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Transfers Ciudad:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldWaitingInside2">
+            <Component class="javax.swing.JTextField" name="jTextFieldTransfersCiudadBarcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldWaitingInside2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldTransfersCiudadBarcelonaActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel33">
@@ -896,39 +859,24 @@
                 <Property name="text" type="java.lang.String" value="Pista 2:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S15">
+            <Component class="javax.swing.JTextField" name="jTextFieldPista1Barcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S16">
+            <Component class="javax.swing.JTextField" name="jTextFieldPista2Barcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S17">
+            <Component class="javax.swing.JTextField" name="jTextFieldPista3Barcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S18">
+            <Component class="javax.swing.JTextField" name="jTextFieldPista4Barcelona">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S19">
-              <Properties>
-                <Property name="editable" type="boolean" value="false"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldCookP3S20">
-              <Properties>
-                <Property name="editable" type="boolean" value="false"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel56">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Pista 3:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel57">
@@ -939,11 +887,6 @@
             <Component class="javax.swing.JLabel" name="jLabel58">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Pista 4:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel59">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Pista 5:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel60">
@@ -978,6 +921,20 @@
             </Component>
           </SubComponents>
         </Container>
+        <Component class="javax.swing.JButton" name="jButtonIniciar">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Iniciar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonIniciarActionPerformed"/>
+          </Events>
+        </Component>
       </SubComponents>
     </Container>
   </SubComponents>
