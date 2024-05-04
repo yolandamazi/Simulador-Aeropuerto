@@ -5,8 +5,8 @@ import javax.swing.*;
 
 public class Main extends javax.swing.JFrame {
     //Attributes
-    Aeropuerto aeropuertoMadrid = new Aeropuerto("Madrid");
-    Aeropuerto aeropuertoBarcelona = new Aeropuerto("Barcelona");
+    Aeropuerto aeropuertoMadrid = new Aeropuerto("Madrid", this);
+    Aeropuerto aeropuertoBarcelona = new Aeropuerto("Barcelona", this);
     
     Random r = new Random();
     boolean jButtonResumeStatus = false;
@@ -14,9 +14,155 @@ public class Main extends javax.swing.JFrame {
     public Main(){
         initComponents();
         this.setResizable(false);
+        
     }
 
-    //Getters y Setters
+    //Getters y Setters+
+    public String getjTextFieldAEstacionamientoBarcelona() {
+        return jTextFieldAEstacionamientoBarcelona.getText();
+    }
+
+    public String getjTextFieldAEstacionamientoMadrid() {
+        return jTextFieldAEstacionamientoMadrid.getText();
+    }
+
+    public String getjTextFieldAeroviaBarcelona() {
+        return jTextFieldAeroviaBarcelona.getText();
+    }
+
+    public String getjTextFieldAeroviaMadrid() {
+        return jTextFieldAeroviaMadrid.getText();
+    }
+
+    public String getjTextFieldGate1Barcelona() {
+        return jTextFieldGate1Barcelona.getText();
+    }
+
+    public String getjTextFieldGate1Madrid() {
+        return jTextFieldGate1Madrid.getText();
+    }
+
+    public String getjTextFieldGate2Barcelona() {
+        return jTextFieldGate2Barcelona.getText();
+    }
+
+    public String getjTextFieldGate2Madrid() {
+        return jTextFieldGate2Madrid.getText();
+    }
+
+    public String getjTextFieldGate3Barcelona() {
+        return jTextFieldGate3Barcelona.getText();
+    }
+
+    public String getjTextFieldGate3Madrid() {
+        return jTextFieldGate3Madrid.getText();
+    }
+
+    public String getjTextFieldGate4Barcelona() {
+        return jTextFieldGate4Barcelona.getText();
+    }
+
+    public String getjTextFieldGate4Madrid() {
+        return jTextFieldGate4Madrid.getText();
+    }
+
+    public String getjTextFieldGate5Barcelona() {
+        return jTextFieldGate5Barcelona.getText();
+    }
+
+    public String getjTextFieldGate5Madrid() {
+        return jTextFieldGate5Madrid.getText();
+    }
+
+    public String getjTextFieldGate6Barcelona() {
+        return jTextFieldGate6Barcelona.getText();
+    }
+
+    public String getjTextFieldGate6Madrid() {
+        return jTextFieldGate6Madrid.getText();
+    }
+
+    public String getjTextFieldHangarBarcelona() {
+        return jTextFieldHangarBarcelona.getText();
+    }
+
+    public String getjTextFieldHangarMadrid() {
+        return jTextFieldHangarMadrid.getText();
+    }
+
+    public String getjTextFieldPasajerosBarcelona() {
+        return jTextFieldPasajerosBarcelona.getText();
+    }
+
+    public String getjTextFieldPasajerosMadrid() {
+        return jTextFieldPasajerosMadrid.getText();
+    }
+
+    public String getjTextFieldPista1Barcelona() {
+        return jTextFieldPista1Barcelona.getText();
+    }
+
+    public String getjTextFieldPista1Madrid() {
+        return jTextFieldPista1Madrid.getText();
+    }
+
+    public String getjTextFieldPista2Barcelona() {
+        return jTextFieldPista2Barcelona.getText();
+    }
+
+    public String getjTextFieldPista2Madrid() {
+        return jTextFieldPista2Madrid.getText();
+    }
+
+    public String getjTextFieldPista3Barcelona() {
+        return jTextFieldPista3Barcelona.getText();
+    }
+
+    public String getjTextFieldPista3Madrid() {
+        return jTextFieldPista3Madrid.getText();
+    }
+
+    public String getjTextFieldPista4Barcelona() {
+        return jTextFieldPista4Barcelona.getText();
+    }
+
+    public String getjTextFieldPista4Madrid() {
+        return jTextFieldPista4Madrid.getText();
+    }
+
+    public String getjTextFieldRodajeBarcelona() {
+        return jTextFieldRodajeBarcelona.getText();
+    }
+
+    public String getjTextFieldRodajeMadrid() {
+        return jTextFieldRodajeMadrid.getText();
+    }
+
+    public String getjTextFieldTallerBarcelona() {
+        return jTextFieldTallerBarcelona.getText();
+    }
+
+    public String getjTextFieldTallerMadrid() {
+        return jTextFieldTallerMadrid.getText();
+    }
+
+    public String getjTextFieldTransfersAeropuertoBarcelona() {
+        return jTextFieldTransfersAeropuertoBarcelona.getText();
+    }
+
+    public String getjTextFieldTransfersAeropuertoMadrid() {
+        return jTextFieldTransfersAeropuertoMadrid.getText();
+    }
+
+    public String getjTextFieldTransfersCiudadBarcelona() {
+        return jTextFieldTransfersCiudadBarcelona.getText();
+    }
+
+    public String getjTextFieldTransfersCiudadMadrid() {
+        return jTextFieldTransfersCiudadMadrid.getText();
+    }
+    
+    
     public void setjButtonIniciar(JButton jButtonIniciar) {
         this.jButtonIniciar = jButtonIniciar;
     }

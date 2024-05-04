@@ -118,6 +118,7 @@ public class Avion extends Thread {
             //AEROPUERTO DESTINO
                 //Aterrizar
                 aeropuertoDestino.aterrizar(this); //Aterrizar implica salir de la aerovia y entrar a pistas de aeropuerto destino
+                aeropuertoDestino.salirPistas(this);
                 aeropuertoDestino.entrarAreaRodaje(this);
                 try{
                     sleep(r.nextInt(30000-15000+1)+15000);
@@ -157,7 +158,8 @@ public class Avion extends Thread {
                     }
                     aeropuertoDestino.salirHangar(this);
                 }
-                
+              
+            this.pasajeros = 0;
             aeropuertoOrigen = aeropuertoDestino;
             aeropuertoDestino = aeropuertoOrigen;
         }
