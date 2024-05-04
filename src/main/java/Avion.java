@@ -26,8 +26,6 @@ public class Avion extends Thread {
         
         this.id = String.valueOf(letra1 + letra2 + "-" + numeros);
         
-        System.out.println("Avion:"+id);
-        
         if (Integer.parseInt(numeros)%2 == 0){
             this.aeropuertoOrigen = aeropuertoMadrid;
             this.aeropuertoDestino = aeropuertoBarcelona;
@@ -105,7 +103,8 @@ public class Avion extends Thread {
                 aeropuertoOrigen.entrarAreaEstacionamiento(this);
                 this.estado = "Embarque";
                 aeropuertoOrigen.embarcar(this); // Cuando embarque, saldra del area de estacionamiento
-
+                aeropuertoOrigen.salirEmbarque(this);
+                
                 //Area de Rodaje y buscar pista
                 aeropuertoOrigen.entrarAreaRodaje(this);
                 aeropuertoOrigen.entrarPistas(this);
@@ -126,6 +125,7 @@ public class Avion extends Thread {
                 }
                 this.estado = "Desembarque";
                 aeropuertoDestino.desembarcar(this);
+                aeropuertoDestino.salirDesembarque(this);
                 aeropuertoDestino.entrarAreaEstacionamiento(this);
                 try{
                     sleep(r.nextInt(5000-1000+1)+1000);

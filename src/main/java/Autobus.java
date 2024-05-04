@@ -14,8 +14,6 @@ public class Autobus extends Thread {
         String numeros = String.valueOf(r.nextInt(9999-0000+1)+0000);
         this.id = "B-" + numeros;
         
-        System.out.println("Autobus:" + id);
-        
         if (Integer.parseInt(numeros)%2 == 0){
             this.aeropuerto = aeropuertoMadrid;
         } else {
