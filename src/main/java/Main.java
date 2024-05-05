@@ -5,8 +5,10 @@ import javax.swing.*;
 
 public class Main extends javax.swing.JFrame {
     //Attributes
-    Aeropuerto aeropuertoMadrid = new Aeropuerto("Madrid", this);
-    Aeropuerto aeropuertoBarcelona = new Aeropuerto("Barcelona", this);
+    LogSistema logSistema = new LogSistema();
+    Aeropuerto aeropuertoMadrid = new Aeropuerto("Madrid", this, logSistema);
+    Aeropuerto aeropuertoBarcelona = new Aeropuerto("Barcelona", this, logSistema);
+    
     
     Random r = new Random();
     boolean jButtonResumeStatus = false;
@@ -413,6 +415,11 @@ public class Main extends javax.swing.JFrame {
         jButtonIniciar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosed(java.awt.event.WindowEvent evt) {
+                formWindowClosed(evt);
+            }
+        });
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -936,7 +943,6 @@ public class Main extends javax.swing.JFrame {
         jButtonIniciar.setBackground(new java.awt.Color(204, 204, 255));
         jButtonIniciar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButtonIniciar.setText("Iniciar");
-        jButtonIniciar.setActionCommand("Iniciar");
         jButtonIniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonIniciarActionPerformed(evt);
@@ -1058,7 +1064,7 @@ public class Main extends javax.swing.JFrame {
         Thread aviones = new Thread(new Runnable() {
             public void run() {
                 for (int i = 0; i < 8000; i++) {
-                    Avion avion = new Avion(aeropuertoMadrid, aeropuertoBarcelona);
+                    Avion avion = new Avion(aeropuertoMadrid, aeropuertoBarcelona, logSistema);
                     avion.start();
                     try{
                         Thread.sleep(r.nextInt(3000-1000+1)+1000);
@@ -1071,7 +1077,7 @@ public class Main extends javax.swing.JFrame {
         Thread autobuses = new Thread(new Runnable() {
             public void run() {
                 for (int i = 0; i < 4000; i++) {
-                    Autobus autobus = new Autobus(aeropuertoMadrid, aeropuertoBarcelona);
+                    Autobus autobus = new Autobus(aeropuertoMadrid, aeropuertoBarcelona, logSistema);
                     autobus.start();
                     try{
                         Thread.sleep(r.nextInt(1000-500+1)+500);
@@ -1088,6 +1094,11 @@ public class Main extends javax.swing.JFrame {
     private void jTextFieldRodajeBarcelonaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRodajeBarcelonaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldRodajeBarcelonaActionPerformed
+
+    private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
+        // TODO add your handling code here:
+        logSistema.cerrar();
+    }//GEN-LAST:event_formWindowClosed
 
     /**
      * @param args the command line arguments

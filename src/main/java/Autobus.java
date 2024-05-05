@@ -6,13 +6,17 @@ public class Autobus extends Thread {
     private int pasajeros;
     private String lugar;
     private Aeropuerto aeropuerto;
+    private LogSistema logSistema;
     private Random r;
     
     //Constructor
-    public Autobus(Aeropuerto aeropuertoMadrid, Aeropuerto aeropuertoBarcelona) {
+    public Autobus(Aeropuerto aeropuertoMadrid, Aeropuerto aeropuertoBarcelona, LogSistema logSistema) {
         this.r = new Random();
         String numeros = String.valueOf(r.nextInt(9999-0000+1)+0000);
         this.id = "B-" + numeros;
+        
+        this.logSistema = logSistema;
+        logSistema.escribirLog("Autobus: " + this.id + " es creado.");
         
         if (Integer.parseInt(numeros)%2 == 0){
             this.aeropuerto = aeropuertoMadrid;

@@ -47,11 +47,13 @@ public class Aeropuerto {
     
     
     private Main main; 
+    private LogSistema logSistema;
     
     
     //CONSTRUCTOR
-    public Aeropuerto(String ciudad, Main main) {
+    public Aeropuerto(String ciudad, Main main, LogSistema logSistema) {
         this.ciudad = ciudad;
+        this.logSistema = logSistema;
         this.r = new Random();
         this.pasajeros = 0;
         this.hangar = hangar;
@@ -376,6 +378,8 @@ public class Aeropuerto {
         try{
             if (puertasLibres[0].tryAcquire()){
                 avionPuertasLibres[0] = avion;
+                logSistema.escribirLog("Aeropuerto " + this.ciudad + " Avion " + avion.getMyId() +
+                                        " accede a Embarque 3 para desembarcar " + avion.getPasajeros() + " pasajeros");
                 if (this.ciudad.equals("Madrid")){
                     main.setjTextFieldGate3Madrid("Desembarque: " + avion.getMyId());
                 } else {
@@ -383,6 +387,8 @@ public class Aeropuerto {
                 }
             } else if (puertasLibres[1].tryAcquire()){
                 avionPuertasLibres[1] = avion;
+                logSistema.escribirLog("Aeropuerto " + this.ciudad + " Avion " + avion.getMyId() + 
+                                        " accede a Embarque 4 para desembarcar " + avion.getPasajeros() + " pasajeros");
                 if (this.ciudad.equals("Madrid")){
                     main.setjTextFieldGate4Madrid("Desembarque: " + avion.getMyId());
                 } else {
@@ -390,6 +396,8 @@ public class Aeropuerto {
                 }
             } else if (puertasLibres[2].tryAcquire()){
                 avionPuertasLibres[2] = avion;
+                logSistema.escribirLog("Aeropuerto " + this.ciudad + " Avion " + avion.getMyId() + 
+                                        " accede a Embarque 5 para desembarcar " + avion.getPasajeros() + " pasajeros");
                 if (this.ciudad.equals("Madrid")){
                     main.setjTextFieldGate5Madrid("Desembarque: " + avion.getMyId());
                 } else {
@@ -397,6 +405,8 @@ public class Aeropuerto {
                 }
             } else if (puertasLibres[3].tryAcquire()){
                 avionPuertasLibres[3] = avion;
+                logSistema.escribirLog("Aeropuerto " + this.ciudad + " Avion " + avion.getMyId() +
+                                        " accede a Embarque 6 para desembarcar " + avion.getPasajeros() + " pasajeros");
                 if (this.ciudad.equals("Madrid")){
                     main.setjTextFieldGate6Madrid("Desembarque: " + avion.getMyId());
                 } else {
@@ -405,6 +415,8 @@ public class Aeropuerto {
             } else {
                 puertaDesembarque.acquire();
                 avionPuertaDesembarque = avion;
+                logSistema.escribirLog("Aeropuerto " + this.ciudad + " Avion " + avion.getMyId() +
+                                        " accede a Embarque 2 para desembarcar " + avion.getPasajeros() + " pasajeros");
                 if (this.ciudad.equals("Madrid")){
                     main.setjTextFieldGate2Madrid("Desembarque: " + avion.getMyId());
                 } else {
@@ -414,14 +426,15 @@ public class Aeropuerto {
             
             salirAreaRodaje(avion);
             
-            try{
-                avion.sleep(r.nextInt(5000-1000+1)+1000);
-            } catch (InterruptedException e){
-            }
         } catch (InterruptedException e){
         }
     }
     public void salirDesembarque (Avion avion){
+        try{
+            this.dejarPasajeros(avion.getPasajeros());
+            avion.sleep(r.nextInt(5000-1000+1)+1000);
+            } catch (InterruptedException e){
+            }
         avion.setPasajeros(0);
         if (!(avionPuertaDesembarque == null) && avionPuertaDesembarque.getMyId().equals(avion.getMyId())){
             puertaDesembarque.release();
@@ -482,10 +495,13 @@ public class Aeropuerto {
     
     public void entrarAerovia(Avion avion){
         aerovia.add(avion);
+        
         if (this.ciudad.equals("Madrid")){
             main.setjTextFieldAeroviaMadrid(avion.getMyId() + " " + main.getjTextFieldAeroviaMadrid());
+            logSistema.escribirLog("Aeropuerto " + this.ciudad + " Avion " + avion.getMyId() + "(" + avion.getPasajeros() + " pasajeros) entra a la aerovia Madrid-Barcelona");
         } else {
             main.setjTextFieldAeroviaBarcelona(avion.getMyId() + " " + main.getjTextFieldAeroviaBarcelona());
+            logSistema.escribirLog("Aeropuerto " + this.ciudad + " Avion " + avion.getMyId() + "(" + avion.getPasajeros() + " pasajeros) entra a la aerovia Barcelona-Madrid");
         }
         // Quedarse en autovia
         try{
@@ -510,6 +526,8 @@ public class Aeropuerto {
             //Entrar a la pista disponible
             if (pistas[0].tryAcquire()){
                 avionPistas[0] = avion;
+                logSistema.escribirLog("Aeropuerto " + this.ciudad + " Avion " + avion.getMyId() + "(" + avion.getPasajeros() +
+                                        " pasajeros) accede a Pista 1 para despegue");
                 if (this.ciudad.equals("Madrid")){
                     main.setjTextFieldPista1Madrid("Despegue: " + avion.getMyId());
                 } else {
@@ -517,6 +535,8 @@ public class Aeropuerto {
                 }
             } else if (pistas[1].tryAcquire()){
                 avionPistas[1] = avion;
+                logSistema.escribirLog("Aeropuerto " + this.ciudad + " Avion " + avion.getMyId() + "(" + avion.getPasajeros() +
+                                        " pasajeros) accede a Pista 2 para despegue");
                 if (this.ciudad.equals("Madrid")){
                     main.setjTextFieldPista2Madrid("Despegue: " + avion.getMyId());
                 } else {
@@ -524,6 +544,8 @@ public class Aeropuerto {
                 }
             } else if (pistas[2].tryAcquire()){
                 avionPistas[2] = avion;
+                logSistema.escribirLog("Aeropuerto " + this.ciudad + " Avion " + avion.getMyId() + "(" + avion.getPasajeros() +
+                                        " pasajeros) accede a Pista 3 para despegue");
                 if (this.ciudad.equals("Madrid")){
                     main.setjTextFieldPista3Madrid("Despegue: " + avion.getMyId());
                 } else {
@@ -531,6 +553,8 @@ public class Aeropuerto {
                 }
             } else if (pistas[3].tryAcquire()){
                 avionPistas[3] = avion;
+                logSistema.escribirLog("Aeropuerto " + this.ciudad + " Avion " + avion.getMyId() + "(" + avion.getPasajeros() +
+                                        " pasajeros) accede a Pista 4 para despegue");
                 if (this.ciudad.equals("Madrid")){
                     main.setjTextFieldPista4Madrid("Despegue: " + avion.getMyId());
                 } else {

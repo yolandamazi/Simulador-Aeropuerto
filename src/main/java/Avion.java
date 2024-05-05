@@ -9,10 +9,11 @@ public class Avion extends Thread {
     private int capacidadMaxima;
     private String estado; //embarque o desembarque
     private int vuelos;
+    private LogSistema logSistema;
     private Random r;
     
     //Constructor
-    public Avion(Aeropuerto aeropuertoMadrid, Aeropuerto aeropuertoBarcelona) {
+    public Avion(Aeropuerto aeropuertoMadrid, Aeropuerto aeropuertoBarcelona, LogSistema logSistema) {
         this.r = new Random();
         
         String[] abecedario = {
@@ -25,6 +26,9 @@ public class Avion extends Thread {
         String numeros = String.valueOf(r.nextInt(9999-0000+1)+0000);
         
         this.id = String.valueOf(letra1 + letra2 + "-" + numeros);
+        
+        this.logSistema = logSistema;
+        logSistema.escribirLog("Avion: " + this.id + " es creado.");
         
         if (Integer.parseInt(numeros)%2 == 0){
             this.aeropuertoOrigen = aeropuertoMadrid;
