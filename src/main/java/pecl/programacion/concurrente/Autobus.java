@@ -13,21 +13,19 @@ public class Autobus extends Thread {
     //Constructor
     public Autobus(Aeropuerto aeropuertoMadrid, Aeropuerto aeropuertoBarcelona, LogSistema logSistema) {
         this.r = new Random();
-        String numeros = String.valueOf(r.nextInt(9999-0000+1)+0000);
-        this.id = "B-" + numeros;
-        
-        this.logSistema = logSistema;
-        logSistema.escribirLog("Autobus: " + this.id + " es creado.");
-        
-        if (Integer.parseInt(numeros)%2 == 0){
+        int n = r.nextInt(9999-0000+1)+0000;
+        if (n%2 == 0){
             this.aeropuerto = aeropuertoMadrid;
         } else {
             this.aeropuerto = aeropuertoBarcelona;
         }
+        String numeros = String.valueOf(n);
+        this.id = "B-" + numeros;
         
-        this.pasajeros = pasajeros;
+        this.logSistema = logSistema;
+        logSistema.escribirLog("Autobus: " + this.id + " es creado.");
+        this.pasajeros = 0;
         this.lugar = lugar;
-        this.aeropuerto = aeropuerto;
     }
 
     

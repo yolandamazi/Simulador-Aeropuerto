@@ -1,10 +1,19 @@
 package pecl.programacion.concurrente;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.rmi.Naming;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 import java.util.Random;
 import javax.swing.*;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+import pecl.programacion.distribuida.ImpInterfaceAeropuerto;
 
 public class Main extends javax.swing.JFrame {
     //Attributes
@@ -873,6 +882,7 @@ public class Main extends javax.swing.JFrame {
         jLabel64 = new javax.swing.JLabel();
         jLabel65 = new javax.swing.JLabel();
         jButtonIniciar = new javax.swing.JButton();
+        jButtonRegistrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -1409,6 +1419,15 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        jButtonRegistrar.setBackground(new java.awt.Color(204, 204, 255));
+        jButtonRegistrar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButtonRegistrar.setText("Registrar Información");
+        jButtonRegistrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonRegistrarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -1432,7 +1451,8 @@ public class Main extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextFieldAeroviaBarcelona)))
+                        .addComponent(jTextFieldAeroviaBarcelona))
+                    .addComponent(jButtonRegistrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -1454,6 +1474,8 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jTextFieldAeroviaBarcelona, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonIniciar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonRegistrar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1562,6 +1584,22 @@ public class Main extends javax.swing.JFrame {
         logSistema.cerrar();
     }//GEN-LAST:event_formWindowClosed
 
+    private void jButtonRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegistrarActionPerformed
+        // TODO add your handling code here:
+        try {
+            ImpInterfaceAeropuerto objMadrid = new ImpInterfaceAeropuerto(aeropuertoMadrid);
+            ImpInterfaceAeropuerto objBarcelona = new ImpInterfaceAeropuerto(aeropuertoBarcelona);
+            
+            Registry registry = LocateRegistry.createRegistry(1099); //Arranca rmiregistry local en el puerto 1099
+            
+            Naming.rebind("//127.0.0.1/ObjetoAeropuertoMadrid",objMadrid);   //rebind sólo funciona sobre una url del equipo local 
+            Naming.rebind("//127.0.0.1/ObjetoAeropuertoBarcelona",objBarcelona);
+            
+            System.out.println("Ha quedado registrado");
+        } catch (Exception e) {
+        }
+    }//GEN-LAST:event_jButtonRegistrarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1608,6 +1646,7 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonIniciar;
     private javax.swing.JButton jButtonPausar;
+    private javax.swing.JButton jButtonRegistrar;
     private javax.swing.JButton jButtonRenaudar;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel13;

@@ -1,20 +1,16 @@
 package pecl.programacion.concurrente;
 
-import pecl.programacion.concurrente.LogSistema;
-import pecl.programacion.concurrente.Main;
-import java.util.concurrent.ConcurrentLinkedQueue;
+
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.ArrayList;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.Semaphore;
-import java.util.Queue;
-import javax.swing.JTextField;
-import java.util.LinkedList;
 import java.util.Random;
 
-public class Aeropuerto {
+
+public class Aeropuerto{
     //ATRIBUTOS
     private Random r;
     private String ciudad;
@@ -57,6 +53,7 @@ public class Aeropuerto {
     //CONSTRUCTOR
     public Aeropuerto(String ciudad, Main main, LogSistema logSistema) {
         this.ciudad = ciudad;
+        this.main = main;
         this.logSistema = logSistema;
         this.r = new Random();
         this.pasajeros = 0;
@@ -77,7 +74,6 @@ public class Aeropuerto {
         for (int i=0; i < avionPuertasLibres.length; i++){
             avionPuertasLibres[i] = null;
         }
-        this.main = main;
     }
     
     //GETTERS Y SETTERS
@@ -822,7 +818,7 @@ public class Aeropuerto {
     
     public void addTransferCiudad(Autobus autobus){
         transfersCiudad.add(autobus);
-        if (this.ciudad.equals("Madrid")){
+        if (autobus.getAeropuerto().ciudad.equals("Madrid")){
             main.setjTextFieldTransfersCiudadMadrid(autobus.getMyId() + "(" + autobus.getPasajeros() + ") " + main.getjTextFieldTransfersCiudadMadrid());
         } else {
             main.setjTextFieldTransfersCiudadBarcelona(autobus.getMyId() + "(" + autobus.getPasajeros() + ") " + main.getjTextFieldTransfersCiudadBarcelona());
@@ -831,7 +827,7 @@ public class Aeropuerto {
     
     public void removeTransferCiudad(Autobus autobus){
         transfersCiudad.remove(autobus);
-        if (this.ciudad.equals("Madrid")){
+        if (autobus.getAeropuerto().ciudad.equals("Madrid")){
                 main.setjTextFieldTransfersCiudadMadrid(main.getjTextFieldTransfersCiudadMadrid().replace(autobus.getMyId() + "(" + autobus.getPasajeros() + ") ", ""));
         } else {
                 main.setjTextFieldTransfersCiudadBarcelona(main.getjTextFieldTransfersCiudadMadrid().replace(autobus.getMyId() + "(" + autobus.getPasajeros() + ") ",""));
@@ -840,7 +836,7 @@ public class Aeropuerto {
     
     public void addTransferAeropuerto(Autobus autobus){
         transfersAeropuerto.add(autobus);
-        if (this.ciudad.equals("Madrid")){
+        if (autobus.getAeropuerto().ciudad.equals("Madrid")){
             main.setjTextFieldTransfersAeropuertoMadrid(autobus.getMyId() + "(" + autobus.getPasajeros() + ") " + main.getjTextFieldTransfersAeropuertoMadrid());
         } else {
             main.setjTextFieldTransfersAeropuertoBarcelona(autobus.getMyId() + "(" + autobus.getPasajeros() + ") " + main.getjTextFieldTransfersAeropuertoBarcelona());
@@ -849,10 +845,15 @@ public class Aeropuerto {
     
     public void removeTransferAeropuerto(Autobus autobus){
         transfersAeropuerto.remove(autobus);
-        if (this.ciudad.equals("Madrid")){
+        if (autobus.getAeropuerto().ciudad.equals("Madrid")){
                 main.setjTextFieldTransfersAeropuertoMadrid(main.getjTextFieldTransfersAeropuertoMadrid().replace(autobus.getMyId() + "(" + autobus.getPasajeros() + ") ", ""));
         } else {
                 main.setjTextFieldTransfersAeropuertoBarcelona(main.getjTextFieldTransfersAeropuertoMadrid().replace(autobus.getMyId() + "(" + autobus.getPasajeros() + ") ",""));
         }
     }
+    
+    
+    
+    
+    
 }
