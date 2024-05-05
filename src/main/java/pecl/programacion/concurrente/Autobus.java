@@ -1,3 +1,4 @@
+package pecl.programacion.concurrente;
 import java.util.*;
 
 public class Autobus extends Thread {
@@ -79,34 +80,34 @@ public class Autobus extends Thread {
         while (true){
             try {
                 this.lugar = "Ciudad";
-                Thread.sleep(r.nextInt(5000-2000+1)+2000);
                 this.pasajeros = r.nextInt(50-0+1)+0;
+                this.sleep(r.nextInt(5000-2000+1)+2000);//Espera a que se suban
+                
                 aeropuerto.addTransferAeropuerto(this);//Estan en la ciudad de camino al aeropuerto
-                Thread.sleep(r.nextInt(10000-5000+1)+5000);
-                aeropuerto.removeTransferAeropuerto(this);
+                this.sleep(r.nextInt(10000-5000+1)+5000);//De camino al aeropuerto
+                aeropuerto.removeTransferAeropuerto(this);//Llegan al aeropuerto
                 
                 this.lugar = "Aeropuerto";
-                int pasajerosLlegada = aeropuerto.dejarPasajeros(pasajeros);
-                
-                if (this.aeropuerto.getCiudad().equals("Madrid")){
-                    aeropuerto.getMain().setjTextFieldPasajerosMadrid(String.valueOf(pasajerosLlegada));
-                } else {
-                    aeropuerto.getMain().setjTextFieldPasajerosBarcelona(String.valueOf(pasajerosLlegada));
-                }
-                
-                Thread.sleep(r.nextInt(5000-2000+1)+2000);
-                
-                this.pasajeros = r.nextInt(50-0+1)+0;
-                aeropuerto.addTransferCiudad(this);//Estan en el aeropuerto de camino a la ciudad
-                int pasajerosIda = aeropuerto.cogerPasajeros(pasajeros);
-                
+                int pasajerosIda = aeropuerto.dejarPasajeros(pasajeros);
                 if (this.aeropuerto.getCiudad().equals("Madrid")){
                     aeropuerto.getMain().setjTextFieldPasajerosMadrid(String.valueOf(pasajerosIda));
                 } else {
                     aeropuerto.getMain().setjTextFieldPasajerosBarcelona(String.valueOf(pasajerosIda));
                 }
                 
-                Thread.sleep(r.nextInt(10000-5000+1)+5000);
+                this.pasajeros = 0;
+                this.sleep(r.nextInt(5000-2000+1)+2000);//ESperando por pasajeros
+                
+                int pasajerosVuelta = aeropuerto.cogerPasajeros(r.nextInt(50-0+1)+0);
+                this.pasajeros = pasajerosIda;
+                if (this.aeropuerto.getCiudad().equals("Madrid")){
+                    aeropuerto.getMain().setjTextFieldPasajerosMadrid(String.valueOf(pasajerosVuelta));
+                } else {
+                    aeropuerto.getMain().setjTextFieldPasajerosBarcelona(String.valueOf(pasajerosVuelta));
+                }
+                
+                aeropuerto.addTransferCiudad(this);//Estan en el aeropuerto de camino a la ciudad
+                this.sleep(r.nextInt(10000-5000+1)+5000); //De camino a la ciudad
                 aeropuerto.removeTransferCiudad(this);
                 
                 this.lugar = "Ciudad";

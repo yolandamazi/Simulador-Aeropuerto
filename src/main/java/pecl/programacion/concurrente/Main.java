@@ -1,7 +1,10 @@
-import static java.lang.Thread.sleep;
+package pecl.programacion.concurrente;
+
 import java.util.Random;
-import javax.swing.JTextField;
 import javax.swing.*;
+import java.util.concurrent.locks.ReadWriteLock;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Main extends javax.swing.JFrame {
     //Attributes
@@ -9,316 +12,773 @@ public class Main extends javax.swing.JFrame {
     Aeropuerto aeropuertoMadrid = new Aeropuerto("Madrid", this, logSistema);
     Aeropuerto aeropuertoBarcelona = new Aeropuerto("Barcelona", this, logSistema);
     
+    ReadWriteLock lockEstacionamientoMadrid = new ReentrantReadWriteLock();
+    ReadWriteLock lockEstacionamientoBarcelona = new ReentrantReadWriteLock();
+    
+    ReadWriteLock lockAeroviaMadrid = new ReentrantReadWriteLock();
+    ReadWriteLock lockAeroviaBarcelona = new ReentrantReadWriteLock();
+    
+    ReadWriteLock[] lockGatesMadrid = new ReentrantReadWriteLock[6];
+    ReadWriteLock[] lockGatesBarcelona = new ReentrantReadWriteLock[6];
+    
+    ReadWriteLock lockHangarMadrid = new ReentrantReadWriteLock();
+    ReadWriteLock lockHangarBarcelona = new ReentrantReadWriteLock();
+    
+    ReadWriteLock lockPasajerosMadrid = new ReentrantReadWriteLock();
+    ReadWriteLock lockPasajerosBarcelona = new ReentrantReadWriteLock();
+    
+    ReadWriteLock lockRodajeMadrid = new ReentrantReadWriteLock();
+    ReadWriteLock lockRodajeBarcelona = new ReentrantReadWriteLock();
+    
+    ReadWriteLock lockTallerMadrid = new ReentrantReadWriteLock();
+    ReadWriteLock lockTallerBarcelona = new ReentrantReadWriteLock();
+    
+    ReadWriteLock[] lockPistasMadrid = new ReentrantReadWriteLock[4];
+    ReadWriteLock[] lockPistasBarcelona = new ReentrantReadWriteLock[4];
+    
+    ReadWriteLock lockTransfersCiudadMadrid = new ReentrantReadWriteLock();
+    ReadWriteLock lockTransfersCiudadBarcelona = new ReentrantReadWriteLock();
+    
+    ReadWriteLock lockTransfersAeropuertoMadrid = new ReentrantReadWriteLock();
+    ReadWriteLock lockTransfersAeropuertoBarcelona = new ReentrantReadWriteLock();
     
     Random r = new Random();
-    boolean jButtonResumeStatus = false;
     
     public Main(){
         initComponents();
         this.setResizable(false);
         
+        for (int i = 0; i < lockPistasMadrid.length ; i++){
+            lockPistasMadrid[i] = new ReentrantReadWriteLock();
+            lockPistasBarcelona[i] = new ReentrantReadWriteLock();
+        }
+        
+        for (int i = 0; i < lockGatesMadrid.length ; i++){
+            lockGatesMadrid[i] = new ReentrantReadWriteLock();
+            lockGatesBarcelona[i] = new ReentrantReadWriteLock();
+        }
     }
 
-    //Getters y Setters+
+    //GETTERS
     public String getjTextFieldAEstacionamientoBarcelona() {
-        return jTextFieldAEstacionamientoBarcelona.getText();
+        String text;
+        lockEstacionamientoBarcelona.readLock().lock();
+        try {
+            text = jTextFieldAEstacionamientoBarcelona.getText();
+        } finally {
+            lockEstacionamientoBarcelona.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldAEstacionamientoMadrid() {
-        return jTextFieldAEstacionamientoMadrid.getText();
+        String text;
+        lockEstacionamientoMadrid.readLock().lock();
+        try {
+            text = jTextFieldAEstacionamientoMadrid.getText();
+        } finally {
+            lockEstacionamientoMadrid.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldAeroviaBarcelona() {
-        return jTextFieldAeroviaBarcelona.getText();
+        String text;
+        lockAeroviaBarcelona.readLock().lock();
+        try {
+            text = jTextFieldAeroviaBarcelona.getText();
+        } finally {
+            lockAeroviaBarcelona.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldAeroviaMadrid() {
-        return jTextFieldAeroviaMadrid.getText();
+        String text;
+        lockAeroviaMadrid.readLock().lock();
+        try {
+            text = jTextFieldAeroviaMadrid.getText();
+        } finally {
+            lockAeroviaMadrid.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldGate1Barcelona() {
-        return jTextFieldGate1Barcelona.getText();
+        String text;
+        lockGatesBarcelona[0].readLock().lock();
+        try {
+            text = jTextFieldGate1Barcelona.getText();
+        } finally {
+            lockGatesBarcelona[0].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldGate1Madrid() {
-        return jTextFieldGate1Madrid.getText();
+        String text;
+        lockGatesMadrid[0].readLock().lock();
+        try {
+            text = jTextFieldGate1Madrid.getText();
+        } finally {
+            lockGatesMadrid[0].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldGate2Barcelona() {
-        return jTextFieldGate2Barcelona.getText();
+        String text;
+        lockGatesBarcelona[1].readLock().lock();
+        try {
+            text = jTextFieldGate2Barcelona.getText();
+        } finally {
+            lockGatesBarcelona[1].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldGate2Madrid() {
-        return jTextFieldGate2Madrid.getText();
+        String text;
+        lockGatesMadrid[1].readLock().lock();
+        try {
+            text = jTextFieldGate2Madrid.getText();
+        } finally {
+            lockGatesMadrid[1].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldGate3Barcelona() {
-        return jTextFieldGate3Barcelona.getText();
+        String text;
+        lockGatesBarcelona[2].readLock().lock();
+        try {
+            text = jTextFieldGate3Barcelona.getText();
+        } finally {
+            lockGatesBarcelona[2].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldGate3Madrid() {
-        return jTextFieldGate3Madrid.getText();
+        String text;
+        lockGatesMadrid[2].readLock().lock();
+        try {
+            text = jTextFieldGate3Madrid.getText();
+        } finally {
+            lockGatesMadrid[2].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldGate4Barcelona() {
-        return jTextFieldGate4Barcelona.getText();
+        String text;
+        lockGatesBarcelona[3].readLock().lock();
+        try {
+            text = jTextFieldGate4Barcelona.getText();
+        } finally {
+            lockGatesBarcelona[3].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldGate4Madrid() {
-        return jTextFieldGate4Madrid.getText();
+        String text;
+        lockGatesMadrid[3].readLock().lock();
+        try {
+            text = jTextFieldGate4Madrid.getText();
+        } finally {
+            lockGatesMadrid[3].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldGate5Barcelona() {
-        return jTextFieldGate5Barcelona.getText();
+        String text;
+        lockGatesBarcelona[4].readLock().lock();
+        try {
+            text = jTextFieldGate5Barcelona.getText();
+        } finally {
+            lockGatesBarcelona[4].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldGate5Madrid() {
-        return jTextFieldGate5Madrid.getText();
+        String text;
+        lockGatesMadrid[4].readLock().lock();
+        try {
+            text = jTextFieldGate5Madrid.getText();
+        } finally {
+            lockGatesMadrid[4].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldGate6Barcelona() {
-        return jTextFieldGate6Barcelona.getText();
+        String text;
+        lockGatesBarcelona[5].readLock().lock();
+        try {
+            text = jTextFieldGate6Barcelona.getText();
+        } finally {
+            lockGatesBarcelona[5].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldGate6Madrid() {
-        return jTextFieldGate6Madrid.getText();
+        String text;
+        lockGatesMadrid[5].readLock().lock();
+        try {
+            text = jTextFieldGate6Madrid.getText();
+        } finally {
+            lockGatesMadrid[5].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldHangarBarcelona() {
-        return jTextFieldHangarBarcelona.getText();
+        String text;
+        lockHangarBarcelona.readLock().lock();
+        try {
+            text = jTextFieldHangarBarcelona.getText();
+        } finally {
+            lockHangarBarcelona.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldHangarMadrid() {
-        return jTextFieldHangarMadrid.getText();
+        String text;
+        lockHangarMadrid.readLock().lock();
+        try {
+            text = jTextFieldHangarMadrid.getText();
+        } finally {
+            lockHangarMadrid.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldPasajerosBarcelona() {
-        return jTextFieldPasajerosBarcelona.getText();
+        String text;
+        lockPasajerosBarcelona.readLock().lock();
+        try {
+            text = jTextFieldPasajerosBarcelona.getText();
+        } finally {
+            lockPasajerosBarcelona.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldPasajerosMadrid() {
-        return jTextFieldPasajerosMadrid.getText();
+        String text;
+        lockPasajerosMadrid.readLock().lock();
+        try {
+            text = jTextFieldPasajerosMadrid.getText();
+        } finally {
+            lockPasajerosMadrid.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldPista1Barcelona() {
-        return jTextFieldPista1Barcelona.getText();
+        String text;
+        lockPistasBarcelona[0].readLock().lock();
+        try {
+            text = jTextFieldPista1Barcelona.getText();
+        } finally {
+            lockPistasBarcelona[0].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldPista1Madrid() {
-        return jTextFieldPista1Madrid.getText();
+        String text;
+        lockPistasMadrid[0].readLock().lock();
+        try {
+            text = jTextFieldPista1Madrid.getText();
+        } finally {
+            lockPistasMadrid[0].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldPista2Barcelona() {
-        return jTextFieldPista2Barcelona.getText();
+        String text;
+        lockPistasBarcelona[1].readLock().lock();
+        try {
+            text = jTextFieldPista2Barcelona.getText();
+        } finally {
+            lockPistasBarcelona[1].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldPista2Madrid() {
-        return jTextFieldPista2Madrid.getText();
+        String text;
+        lockPistasMadrid[1].readLock().lock();
+        try {
+            text = jTextFieldPista2Madrid.getText();
+        } finally {
+            lockPistasMadrid[1].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldPista3Barcelona() {
-        return jTextFieldPista3Barcelona.getText();
+        String text;
+        lockPistasBarcelona[2].readLock().lock();
+        try {
+            text = jTextFieldPista3Barcelona.getText();
+        } finally {
+            lockPistasBarcelona[2].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldPista3Madrid() {
-        return jTextFieldPista3Madrid.getText();
+        String text;
+        lockPistasMadrid[2].readLock().lock();
+        try {
+            text = jTextFieldPista3Madrid.getText();
+        } finally {
+            lockPistasMadrid[2].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldPista4Barcelona() {
-        return jTextFieldPista4Barcelona.getText();
+        String text;
+        lockPistasBarcelona[3].readLock().lock();
+        try {
+            text = jTextFieldPista4Barcelona.getText();
+        } finally {
+            lockPistasBarcelona[3].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldPista4Madrid() {
-        return jTextFieldPista4Madrid.getText();
+        String text;
+        lockPistasMadrid[3].readLock().lock();
+        try {
+            text = jTextFieldPista4Madrid.getText();
+        } finally {
+            lockPistasMadrid[3].readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldRodajeBarcelona() {
-        return jTextFieldRodajeBarcelona.getText();
+        String text;
+        lockRodajeBarcelona.readLock().lock();
+        try {
+            text = jTextFieldRodajeBarcelona.getText();
+        } finally {
+            lockRodajeBarcelona.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldRodajeMadrid() {
-        return jTextFieldRodajeMadrid.getText();
+        String text;
+        lockRodajeMadrid.readLock().lock();
+        try {
+            text = jTextFieldRodajeMadrid.getText();
+        } finally {
+            lockRodajeMadrid.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldTallerBarcelona() {
-        return jTextFieldTallerBarcelona.getText();
+        String text;
+        lockTallerBarcelona.readLock().lock();
+        try {
+            text = jTextFieldTallerBarcelona.getText();
+        } finally {
+            lockTallerBarcelona.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldTallerMadrid() {
-        return jTextFieldTallerMadrid.getText();
+        String text;
+        lockTallerMadrid.readLock().lock();
+        try {
+            text = jTextFieldTallerMadrid.getText();
+        } finally {
+            lockTallerMadrid.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldTransfersAeropuertoBarcelona() {
-        return jTextFieldTransfersAeropuertoBarcelona.getText();
+        String text;
+        lockTransfersAeropuertoBarcelona.readLock().lock();
+        try {
+            text = jTextFieldTransfersAeropuertoBarcelona.getText();
+        } finally {
+            lockTransfersAeropuertoBarcelona.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldTransfersAeropuertoMadrid() {
-        return jTextFieldTransfersAeropuertoMadrid.getText();
+        String text;
+        lockTransfersAeropuertoMadrid.readLock().lock();
+        try {
+            text = jTextFieldTransfersAeropuertoMadrid.getText();
+        } finally {
+            lockTransfersAeropuertoMadrid.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldTransfersCiudadBarcelona() {
-        return jTextFieldTransfersCiudadBarcelona.getText();
+        String text;
+        lockTransfersCiudadBarcelona.readLock().lock();
+        try {
+            text = jTextFieldTransfersCiudadBarcelona.getText();
+        } finally {
+            lockTransfersCiudadBarcelona.readLock().unlock();
+        }
+        return text;
     }
 
     public String getjTextFieldTransfersCiudadMadrid() {
-        return jTextFieldTransfersCiudadMadrid.getText();
+        String text;
+        lockTransfersCiudadMadrid.readLock().lock();
+        try {
+            text = jTextFieldTransfersCiudadMadrid.getText();
+        } finally {
+            lockTransfersCiudadMadrid.readLock().unlock();
+        }
+        return text;
     }
     
-    
-    public void setjButtonIniciar(JButton jButtonIniciar) {
-        this.jButtonIniciar = jButtonIniciar;
-    }
-
-    public void setjButtonPausar(JButton jButtonPausar) {
-        this.jButtonPausar = jButtonPausar;
-    }
-
-    public void setjButtonRenaudar(JButton jButtonRenaudar) {
-        this.jButtonRenaudar = jButtonRenaudar;
-    }
-
+    //SETTERS
     public void setjTextFieldAEstacionamientoBarcelona(String jTextFieldAEstacionamientoBarcelona) {
-        this.jTextFieldAEstacionamientoBarcelona.setText(jTextFieldAEstacionamientoBarcelona);
+        lockEstacionamientoBarcelona.writeLock().lock();
+        try {
+            this.jTextFieldAEstacionamientoBarcelona.setText(jTextFieldAEstacionamientoBarcelona);
+        } finally {
+            lockEstacionamientoBarcelona.writeLock().unlock();
+        }   
     }
 
     public void setjTextFieldAEstacionamientoMadrid(String jTextFieldAEstacionamientoMadrid) {
-        this.jTextFieldAEstacionamientoMadrid.setText(jTextFieldAEstacionamientoMadrid);
+        lockEstacionamientoMadrid.writeLock().lock();
+        try {
+            this.jTextFieldAEstacionamientoMadrid.setText(jTextFieldAEstacionamientoMadrid);
+        } finally {
+            lockEstacionamientoMadrid.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldAeroviaBarcelona(String jTextFieldAeroviaBarcelona) {
-        this.jTextFieldAeroviaBarcelona.setText(jTextFieldAeroviaBarcelona);
+        lockAeroviaBarcelona.writeLock().lock();
+        try {
+            this.jTextFieldAeroviaBarcelona.setText(jTextFieldAeroviaBarcelona);
+        } finally {
+            lockAeroviaBarcelona.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldAeroviaMadrid(String jTextFieldAeroviaMadrid) {
-        this.jTextFieldAeroviaMadrid.setText(jTextFieldAeroviaMadrid);
+        lockAeroviaMadrid.writeLock().lock();
+        try {
+            this.jTextFieldAeroviaMadrid.setText(jTextFieldAeroviaMadrid);
+        } finally {
+            lockAeroviaMadrid.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldGate1Barcelona(String jTextFieldGate1Barcelona) {
-        this.jTextFieldGate1Barcelona.setText(jTextFieldGate1Barcelona);
+        lockGatesBarcelona[0].writeLock().lock();
+        try {
+            this.jTextFieldGate1Barcelona.setText(jTextFieldGate1Barcelona);
+        } finally {
+            lockGatesBarcelona[0].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldGate1Madrid(String jTextFieldGate1Madrid) {
-        this.jTextFieldGate1Madrid.setText(jTextFieldGate1Madrid);
+        lockGatesMadrid[0].writeLock().lock();
+        try {
+            this.jTextFieldGate1Madrid.setText(jTextFieldGate1Madrid);
+        } finally {
+            lockGatesMadrid[0].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldGate2Barcelona(String jTextFieldGate2Barcelona) {
-        this.jTextFieldGate2Barcelona.setText(jTextFieldGate2Barcelona);
+        lockGatesBarcelona[1].writeLock().lock();
+        try {
+            this.jTextFieldGate2Barcelona.setText(jTextFieldGate2Barcelona);
+        } finally {
+            lockGatesBarcelona[1].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldGate2Madrid(String jTextFieldGate2Madrid) {
-        this.jTextFieldGate2Madrid.setText(jTextFieldGate2Madrid);
+        lockGatesMadrid[1].writeLock().lock();
+        try {
+            this.jTextFieldGate2Madrid.setText(jTextFieldGate2Madrid);
+        } finally {
+            lockGatesMadrid[1].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldGate3Barcelona(String jTextFieldGate3Barcelona) {
-        this.jTextFieldGate3Barcelona.setText(jTextFieldGate3Barcelona);
+        lockGatesBarcelona[2].writeLock().lock();
+        try {
+            this.jTextFieldGate3Barcelona.setText(jTextFieldGate3Barcelona);
+        } finally {
+            lockGatesBarcelona[2].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldGate3Madrid(String jTextFieldGate3Madrid) {
-        this.jTextFieldGate3Madrid.setText(jTextFieldGate3Madrid);
+        lockGatesMadrid[2].writeLock().lock();
+        try {
+            this.jTextFieldGate3Madrid.setText(jTextFieldGate3Madrid);
+        } finally {
+            lockGatesMadrid[2].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldGate4Barcelona(String jTextFieldGate4Barcelona) {
-        this.jTextFieldGate4Barcelona.setText(jTextFieldGate4Barcelona);
+        lockGatesBarcelona[3].writeLock().lock();
+        try {
+            this.jTextFieldGate4Barcelona.setText(jTextFieldGate4Barcelona);
+        } finally {
+            lockGatesBarcelona[3].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldGate4Madrid(String jTextFieldGate4Madrid) {
-        this.jTextFieldGate4Madrid.setText(jTextFieldGate4Madrid);
+        lockGatesMadrid[3].writeLock().lock();
+        try {
+            this.jTextFieldGate4Madrid.setText(jTextFieldGate4Madrid);
+        } finally {
+            lockGatesMadrid[3].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldGate5Barcelona(String jTextFieldGate5Barcelona) {
-        this.jTextFieldGate5Barcelona.setText(jTextFieldGate5Barcelona);
+        lockGatesBarcelona[4].writeLock().lock();
+        try {
+            this.jTextFieldGate5Barcelona.setText(jTextFieldGate5Barcelona);
+        } finally {
+            lockGatesBarcelona[4].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldGate5Madrid(String jTextFieldGate5Madrid) {
-        this.jTextFieldGate5Madrid.setText(jTextFieldGate5Madrid);
+        lockGatesMadrid[4].writeLock().lock();
+        try {
+            this.jTextFieldGate5Madrid.setText(jTextFieldGate5Madrid);
+        } finally {
+            lockGatesMadrid[4].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldGate6Barcelona(String jTextFieldGate6Barcelona) {
-        this.jTextFieldGate6Barcelona.setText(jTextFieldGate6Barcelona);
+        lockGatesBarcelona[5].writeLock().lock();
+        try {
+            this.jTextFieldGate6Barcelona.setText(jTextFieldGate6Barcelona);
+        } finally {
+            lockGatesBarcelona[5].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldGate6Madrid(String jTextFieldGate6Madrid) {
-        this.jTextFieldGate6Madrid.setText(jTextFieldGate6Madrid);
+        lockGatesMadrid[5].writeLock().lock();
+        try {
+            this.jTextFieldGate6Madrid.setText(jTextFieldGate6Madrid);
+        } finally {
+            lockGatesMadrid[5].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldHangarBarcelona(String jTextFieldHangarBarcelona) {
-        this.jTextFieldHangarBarcelona.setText(jTextFieldHangarBarcelona);
+        lockHangarBarcelona.writeLock().lock();
+        try {
+            this.jTextFieldHangarBarcelona.setText(jTextFieldHangarBarcelona);
+        } finally {
+            lockHangarBarcelona.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldHangarMadrid(String jTextFieldHangarMadrid) {
-        this.jTextFieldHangarMadrid.setText(jTextFieldHangarMadrid);
+        lockHangarMadrid.writeLock().lock();
+        try {
+            this.jTextFieldHangarMadrid.setText(jTextFieldHangarMadrid);
+        } finally {
+            lockHangarMadrid.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldPasajerosBarcelona(String jTextFieldPasajerosBarcelona) {
-        this.jTextFieldPasajerosBarcelona.setText(jTextFieldPasajerosBarcelona);
+        lockPasajerosBarcelona.writeLock().lock();
+        try {
+            this.jTextFieldPasajerosBarcelona.setText(jTextFieldPasajerosBarcelona);
+        } finally {
+            lockPasajerosBarcelona.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldPasajerosMadrid(String jTextFieldPasajerosMadrid) {
-        this.jTextFieldPasajerosMadrid.setText(jTextFieldPasajerosMadrid);
+        lockPasajerosMadrid.writeLock().lock();
+        try {
+            this.jTextFieldPasajerosMadrid.setText(jTextFieldPasajerosMadrid);
+        } finally {
+            lockPasajerosMadrid.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldPista1Barcelona(String jTextFieldPista1Barcelona) {
-        this.jTextFieldPista1Barcelona.setText(jTextFieldPista1Barcelona);
+        lockPistasBarcelona[0].writeLock().lock();
+        try {
+            this.jTextFieldPista1Barcelona.setText(jTextFieldPista1Barcelona);
+        } finally {
+            lockPistasBarcelona[0].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldPista1Madrid(String jTextFieldPista1Madrid) {
-        this.jTextFieldPista1Madrid.setText(jTextFieldPista1Madrid);
+        lockPistasMadrid[0].writeLock().lock();
+        try {
+            this.jTextFieldPista1Madrid.setText(jTextFieldPista1Madrid);
+        } finally {
+            lockPistasMadrid[0].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldPista2Barcelona(String jTextFieldPista2Barcelona) {
-        this.jTextFieldPista2Barcelona.setText(jTextFieldPista2Barcelona);
+        lockPistasBarcelona[1].writeLock().lock();
+        try {
+            this.jTextFieldPista2Barcelona.setText(jTextFieldPista2Barcelona);
+        } finally {
+            lockPistasBarcelona[1].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldPista2Madrid(String jTextFieldPista2Madrid) {
-        this.jTextFieldPista2Madrid.setText(jTextFieldPista2Madrid);
+        lockPistasMadrid[1].writeLock().lock();
+        try {
+            this.jTextFieldPista2Madrid.setText(jTextFieldPista2Madrid);
+        } finally {
+            lockPistasMadrid[1].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldPista3Barcelona(String jTextFieldPista3Barcelona) {
-        this.jTextFieldPista3Barcelona.setText(jTextFieldPista3Barcelona);
+        lockPistasBarcelona[2].writeLock().lock();
+        try {
+            this.jTextFieldPista3Barcelona.setText(jTextFieldPista3Barcelona);
+        } finally {
+            lockPistasBarcelona[2].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldPista3Madrid(String jTextFieldPista3Madrid) {
-        this.jTextFieldPista3Madrid.setText(jTextFieldPista3Madrid);
+        lockPistasMadrid[2].writeLock().lock();
+        try {
+            this.jTextFieldPista3Madrid.setText(jTextFieldPista3Madrid);
+        } finally {
+            lockPistasMadrid[2].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldPista4Barcelona(String jTextFieldPista4Barcelona) {
-        this.jTextFieldPista4Barcelona.setText(jTextFieldPista4Barcelona);
+        lockPistasBarcelona[3].writeLock().lock();
+        try {
+            this.jTextFieldPista4Barcelona.setText(jTextFieldPista4Barcelona);
+        } finally {
+            lockPistasBarcelona[3].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldPista4Madrid(String jTextFieldPista4Madrid) {
-        this.jTextFieldPista4Madrid.setText(jTextFieldPista4Madrid);
+        lockPistasMadrid[3].writeLock().lock();
+        try {
+            this.jTextFieldPista4Madrid.setText(jTextFieldPista4Madrid);
+        } finally {
+            lockPistasMadrid[3].writeLock().unlock();
+        }
     }
 
     public void setjTextFieldRodajeBarcelona(String jTextFieldRodajeBarcelona) {
-        this.jTextFieldRodajeBarcelona.setText(jTextFieldRodajeBarcelona);
+        lockRodajeBarcelona.writeLock().lock();
+        try {
+            this.jTextFieldRodajeBarcelona.setText(jTextFieldRodajeBarcelona);
+        } finally {
+            lockRodajeBarcelona.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldRodajeMadrid(String jTextFieldRodajeMadrid) {
-        this.jTextFieldRodajeMadrid.setText(jTextFieldRodajeMadrid);
+        lockRodajeMadrid.writeLock().lock();
+        try {
+            this.jTextFieldRodajeMadrid.setText(jTextFieldRodajeMadrid);
+        } finally {
+            lockRodajeMadrid.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldTallerBarcelona(String jTextFieldTallerBarcelona) {
-        this.jTextFieldTallerBarcelona.setText(jTextFieldTallerBarcelona);
+        lockTallerBarcelona.writeLock().lock();
+        try {
+            this.jTextFieldTallerBarcelona.setText(jTextFieldTallerBarcelona);
+        } finally {
+            lockTallerBarcelona.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldTallerMadrid(String jTextFieldTallerMadrid) {
-        this.jTextFieldTallerMadrid.setText(jTextFieldTallerMadrid);
+        lockTallerMadrid.writeLock().lock();
+        try {
+            this.jTextFieldTallerMadrid.setText(jTextFieldTallerMadrid);
+        } finally {
+            lockTallerMadrid.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldTransfersAeropuertoBarcelona(String jTextFieldTransfersAeropuertoBarcelona) {
-        this.jTextFieldTransfersAeropuertoBarcelona.setText(jTextFieldTransfersAeropuertoBarcelona);
+        lockTransfersAeropuertoBarcelona.writeLock().lock();
+        try {
+            this.jTextFieldTransfersAeropuertoBarcelona.setText(jTextFieldTransfersAeropuertoBarcelona);
+        } finally {
+            lockTransfersAeropuertoBarcelona.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldTransfersAeropuertoMadrid(String jTextFieldTransfersAeropuertoMadrid) {
-        this.jTextFieldTransfersAeropuertoMadrid.setText(jTextFieldTransfersAeropuertoMadrid);
+        lockTransfersAeropuertoMadrid.writeLock().lock();
+        try {
+            this.jTextFieldTransfersAeropuertoMadrid.setText(jTextFieldTransfersAeropuertoMadrid);
+        } finally {
+            lockTransfersAeropuertoMadrid.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldTransfersCiudadBarcelona(String jTextFieldTransfersCiudadBarcelona) {
-        this.jTextFieldTransfersCiudadBarcelona.setText(jTextFieldTransfersCiudadBarcelona);
+        lockTransfersCiudadBarcelona.writeLock().lock();
+        try {
+            this.jTextFieldTransfersCiudadBarcelona.setText(jTextFieldTransfersCiudadBarcelona);
+        } finally {
+            lockTransfersCiudadBarcelona.writeLock().unlock();
+        }
     }
 
     public void setjTextFieldTransfersCiudadMadrid(String jTextFieldTransfersCiudadMadrid) {
-        this.jTextFieldTransfersCiudadMadrid.setText(jTextFieldTransfersCiudadMadrid);
+        lockTransfersCiudadMadrid.writeLock().lock();
+        try {
+            this.jTextFieldTransfersCiudadMadrid.setText(jTextFieldTransfersCiudadMadrid);
+        } finally {
+            lockTransfersCiudadMadrid.writeLock().unlock();
+        }
     }
     
     
@@ -1064,12 +1524,13 @@ public class Main extends javax.swing.JFrame {
         Thread aviones = new Thread(new Runnable() {
             public void run() {
                 for (int i = 0; i < 8000; i++) {
-                    Avion avion = new Avion(aeropuertoMadrid, aeropuertoBarcelona, logSistema);
-                    avion.start();
                     try{
                         Thread.sleep(r.nextInt(3000-1000+1)+1000);
                     } catch (InterruptedException e){
                     }
+                    Avion avion = new Avion(aeropuertoMadrid, aeropuertoBarcelona, logSistema);
+                    avion.start();
+                    
                 }
             }
         });
@@ -1087,8 +1548,9 @@ public class Main extends javax.swing.JFrame {
             }
         });
         
-        aviones.start();
         autobuses.start();
+        aviones.start();
+        
     }//GEN-LAST:event_jButtonIniciarActionPerformed
 
     private void jTextFieldRodajeBarcelonaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRodajeBarcelonaActionPerformed
