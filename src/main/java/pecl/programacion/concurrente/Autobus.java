@@ -82,36 +82,21 @@ public class Autobus extends Thread {
                 this.lugar = "Ciudad";
                 this.pasajeros = r.nextInt(50-0+1)+0;
                 this.sleep(r.nextInt(5000-2000+1)+2000);//Espera a que se suban
-                
                 aeropuerto.addTransferAeropuerto(this);//Estan en la ciudad de camino al aeropuerto
                 this.sleep(r.nextInt(10000-5000+1)+5000);//De camino al aeropuerto
                 aeropuerto.removeTransferAeropuerto(this);//Llegan al aeropuerto
+                aeropuerto.dejarPasajeros(pasajeros);
                 
                 this.lugar = "Aeropuerto";
-                int pasajerosIda = aeropuerto.dejarPasajeros(pasajeros);
-                if (this.aeropuerto.getCiudad().equals("Madrid")){
-                    aeropuerto.getMain().setjTextFieldPasajerosMadrid(String.valueOf(pasajerosIda));
-                } else {
-                    aeropuerto.getMain().setjTextFieldPasajerosBarcelona(String.valueOf(pasajerosIda));
-                }
-                
                 this.pasajeros = 0;
-                this.sleep(r.nextInt(5000-2000+1)+2000);//ESperando por pasajeros
-                
-                int pasajerosVuelta = aeropuerto.cogerPasajeros(r.nextInt(50-0+1)+0);
-                this.pasajeros = pasajerosIda;
-                if (this.aeropuerto.getCiudad().equals("Madrid")){
-                    aeropuerto.getMain().setjTextFieldPasajerosMadrid(String.valueOf(pasajerosVuelta));
-                } else {
-                    aeropuerto.getMain().setjTextFieldPasajerosBarcelona(String.valueOf(pasajerosVuelta));
-                }
-                
+                this.sleep(r.nextInt(5000-2000+1)+2000);//Esperando por pasajeros
+                this.pasajeros = aeropuerto.cogerPasajeros(r.nextInt(50-0+1)+0);;
                 aeropuerto.addTransferCiudad(this);//Estan en el aeropuerto de camino a la ciudad
                 this.sleep(r.nextInt(10000-5000+1)+5000); //De camino a la ciudad
-                aeropuerto.removeTransferCiudad(this);
+                this.pasajeros = 0;
                 
                 this.lugar = "Ciudad";
-                this.pasajeros = 0;
+                aeropuerto.removeTransferCiudad(this);
             } catch (InterruptedException e){
             }
         }

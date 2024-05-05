@@ -278,6 +278,11 @@ public class Aeropuerto {
                 nPasajeros = this.pasajeros;
                 this.pasajeros = 0;
             }
+            if (this.ciudad.equals("Madrid")){
+                main.setjTextFieldPasajerosMadrid(String.valueOf(pasajeros));
+            } else {
+                main.setjTextFieldPasajerosBarcelona(String.valueOf(pasajeros));
+            }
         } finally {
             lockPasajeros.unlock();
         }
@@ -288,6 +293,11 @@ public class Aeropuerto {
         lockPasajeros.lock();
         try{
             this.pasajeros += nPasajeros;
+            if (this.ciudad.equals("Madrid")){
+                main.setjTextFieldPasajerosMadrid(String.valueOf(pasajeros));
+            } else {
+                main.setjTextFieldPasajerosBarcelona(String.valueOf(pasajeros));
+            }
         } finally {
             lockPasajeros.unlock();
         }
@@ -296,64 +306,65 @@ public class Aeropuerto {
     
     public void embarcar (Avion avion){
         try {
-                if (puertasLibres[0].tryAcquire()){
-                    avionPuertasLibres[0] = avion;
-                    if (this.ciudad.equals("Madrid")){
-                        main.setjTextFieldGate3Madrid("Embarque: " + avion.getMyId());
-                    } else {
-                        main.setjTextFieldGate3Barcelona("Embarque: " + avion.getMyId());
-                    }
-                } else if (puertasLibres[1].tryAcquire()){
-                    avionPuertasLibres[1] = avion;
-                    if (this.ciudad.equals("Madrid")){
-                        main.setjTextFieldGate4Madrid("Embarque: " + avion.getMyId());
-                    } else {
-                        main.setjTextFieldGate4Barcelona("Embarque: " + avion.getMyId());
-                    }
-                } else if (puertasLibres[2].tryAcquire()){
+            if (puertasLibres[0].tryAcquire()){
+                avionPuertasLibres[0] = avion;
+                if (this.ciudad.equals("Madrid")){
+                    main.setjTextFieldGate3Madrid("Embarque: " + avion.getMyId());
+                } else {
+                    main.setjTextFieldGate3Barcelona("Embarque: " + avion.getMyId());
+                }
+            } else if (puertasLibres[1].tryAcquire()){
+                avionPuertasLibres[1] = avion;
+                if (this.ciudad.equals("Madrid")){
+                    main.setjTextFieldGate4Madrid("Embarque: " + avion.getMyId());
+                } else {
+                    main.setjTextFieldGate4Barcelona("Embarque: " + avion.getMyId());
+                }
+            } else if (puertasLibres[2].tryAcquire()){
                     avionPuertasLibres[2] = avion;
                     if (this.ciudad.equals("Madrid")){
                         main.setjTextFieldGate5Madrid("Embarque: " + avion.getMyId());
                     } else {
                         main.setjTextFieldGate5Barcelona("Embarque: " + avion.getMyId());
                     }
-                } else if (puertasLibres[3].tryAcquire()){
+            } else if (puertasLibres[3].tryAcquire()){
                     avionPuertasLibres[3] = avion;
                     if (this.ciudad.equals("Madrid")){
                         main.setjTextFieldGate6Madrid("Embarque: " + avion.getMyId());
                     } else {
                         main.setjTextFieldGate6Barcelona("Embarque: " + avion.getMyId());
                     }
+            } else {
+                puertaEmbarque.acquire();
+                avionPuertaEmbarque = avion;
+                if (this.ciudad.equals("Madrid")){
+                    main.setjTextFieldGate1Madrid("Embarque: " + avion.getMyId());
                 } else {
-                    puertaEmbarque.acquire();
-                    avionPuertaEmbarque = avion;
-                    if (this.ciudad.equals("Madrid")){
-                        main.setjTextFieldGate1Madrid("Embarque: " + avion.getMyId());
-                    } else {
-                        main.setjTextFieldGate1Barcelona("Embarque: " + avion.getMyId());
-                    }
+                    main.setjTextFieldGate1Barcelona("Embarque: " + avion.getMyId());
+                }
             } 
             
             avion.getAeropuertoOrigen().salirAreaEstacionamiento(avion);
             
-            //Subir los pasajeros
+            //SUBIR A LOS PASAJEROS
             int intentos = 1;
-            while (!(avion.getCapacidadMaxima() >= avion.getPasajeros()) || !(intentos <= 3)){
-                if (pasajeros <= (avion.getCapacidadMaxima()) - avion.getPasajeros()){
-                    avion.setPasajeros(this.cogerPasajeros(pasajeros));
-                    pasajeros = 0;
-                    
-                    // Tiempo de espera si no hay pasajeros suficientes
-                    try{
-                        avion.sleep(r.nextInt(5000-1000+1)+1000);
-                    } catch (InterruptedException e){
-                    }
-                } else {
-                    int subidaPasajeros = this.cogerPasajeros(avion.getCapacidadMaxima() - avion.getPasajeros());
-                    avion.setPasajeros(avion.getPasajeros() + subidaPasajeros);
+            avion.setPasajeros(this.cogerPasajeros(avion.getCapacidadMaxima()));
+            //Tiempo de subida
+            try{
+                avion.sleep(r.nextInt(3000-1000+1)+1000);
+            } catch (InterruptedException e){
+            }
+            
+            while ((avion.getPasajeros() < avion.getCapacidadMaxima()) && (intentos <= 3)){
+                //Tiempo de espera si no hay pasajeros suficientes
+                try{
+                    avion.sleep(r.nextInt(5000-1000+1)+1000);
+                } catch (InterruptedException e){
                 }
                 
-                // Tiempo de transferencia de pasajeros
+                avion.setPasajeros(this.cogerPasajeros((avion.getCapacidadMaxima()) - avion.getPasajeros()));
+                
+                // Tiempo de subida
                 try{
                     avion.sleep(r.nextInt(3000-1000+1)+1000);
                 } catch (InterruptedException e){
@@ -366,14 +377,39 @@ public class Aeropuerto {
 
     public void salirEmbarque(Avion avion){
             if (!(avionPuertaEmbarque == null) && avionPuertaEmbarque.getMyId().equals(avion.getMyId())){
+                if (this.ciudad.equals("Madrid")){
+                    main.setjTextFieldGate1Madrid("");
+                } else {
+                    main.setjTextFieldGate1Barcelona("");
+                }
                 puertaEmbarque.release();
             } else if (avionPuertasLibres[0].getMyId().equals(avion.getMyId())){
+                if (this.ciudad.equals("Madrid")){
+                    main.setjTextFieldGate3Madrid("");
+                } else {
+                    main.setjTextFieldGate3Barcelona("");
+                }
                 puertasLibres[0].release();
             } else if (avionPuertasLibres[1].getMyId().equals(avion.getMyId())){
+                if (this.ciudad.equals("Madrid")){
+                    main.setjTextFieldGate4Madrid("");
+                } else {
+                    main.setjTextFieldGate4Barcelona("");
+                }
                 puertasLibres[1].release();
             } else if (avionPuertasLibres[2].getMyId().equals(avion.getMyId())){
+                if (this.ciudad.equals("Madrid")){
+                    main.setjTextFieldGate5Madrid("");
+                } else {
+                    main.setjTextFieldGate5Barcelona("");
+                }
                 puertasLibres[2].release();
             } else if (avionPuertasLibres[3].getMyId().equals(avion.getMyId())){
+                if (this.ciudad.equals("Madrid")){
+                    main.setjTextFieldGate6Madrid("");
+                } else {
+                    main.setjTextFieldGate6Barcelona("");
+                }
                 puertasLibres[3].release();
             }
     }
@@ -437,18 +473,43 @@ public class Aeropuerto {
         try{
             this.dejarPasajeros(avion.getPasajeros());
             avion.sleep(r.nextInt(5000-1000+1)+1000);
-            } catch (InterruptedException e){
-            }
+        } catch (InterruptedException e){
+        }
         avion.setPasajeros(0);
         if (!(avionPuertaDesembarque == null) && avionPuertaDesembarque.getMyId().equals(avion.getMyId())){
+            if (this.ciudad.equals("Madrid")){
+                main.setjTextFieldGate2Madrid("");
+            } else {
+                main.setjTextFieldGate2Barcelona("");
+            }
             puertaDesembarque.release();
         } else if (avionPuertasLibres[0].getMyId().equals(avion.getMyId())){
+            if (this.ciudad.equals("Madrid")){
+                main.setjTextFieldGate3Madrid("");
+            } else {
+                main.setjTextFieldGate3Barcelona("");
+            }
             puertasLibres[0].release();
         } else if (avionPuertasLibres[1].getMyId().equals(avion.getMyId())){
+            if (this.ciudad.equals("Madrid")){
+                main.setjTextFieldGate4Madrid("");
+            } else {
+                main.setjTextFieldGate4Barcelona("");
+            }
             puertasLibres[1].release();
         } else if (avionPuertasLibres[2].getMyId().equals(avion.getMyId())){
+            if (this.ciudad.equals("Madrid")){
+                main.setjTextFieldGate5Madrid("");
+            } else {
+                main.setjTextFieldGate5Barcelona("");
+            }
             puertasLibres[2].release();
         } else if (avionPuertasLibres[3].getMyId().equals(avion.getMyId())){
+            if (this.ciudad.equals("Madrid")){
+                main.setjTextFieldGate6Madrid("");
+            } else {
+                main.setjTextFieldGate6Barcelona("");
+            }
             puertasLibres[3].release();
         }
     }
@@ -464,11 +525,11 @@ public class Aeropuerto {
     
     public void salirHangar (Avion avion) {
         hangar.remove(avion);
-        /*if (this.ciudad.equals("Madrid")){
-            main.setjTextFieldHangarMadrid(main.getjTextFieldHangarMadrid().replace(avion.getMyId(), ""));
+        if (this.ciudad.equals("Madrid")){
+            main.setjTextFieldHangarMadrid(main.getjTextFieldHangarMadrid().replace(avion.getMyId()+" ", ""));
         } else {
-            main.setjTextFieldHangarBarcelona(main.getjTextFieldHangarBarcelona().replace(avion.getMyId(),""));
-        }*/
+            main.setjTextFieldHangarBarcelona(main.getjTextFieldHangarBarcelona().replace(avion.getMyId()+" ",""));
+        }
     }
     
     public void entrarAreaRodaje (Avion avion){
@@ -482,6 +543,11 @@ public class Aeropuerto {
     
     public void salirAreaRodaje (Avion avion) {
         areaRodaje.remove(avion);
+        if (this.ciudad.equals("Madrid")){
+            main.setjTextFieldRodajeMadrid(main.getjTextFieldRodajeMadrid().replace(avion.getMyId()+" ", ""));
+        } else {
+            main.setjTextFieldRodajeBarcelona(main.getjTextFieldRodajeBarcelona().replace(avion.getMyId()+" ",""));
+        }
     }
     
     public void entrarAreaEstacionamiento (Avion avion){
@@ -495,16 +561,20 @@ public class Aeropuerto {
     
     public void salirAreaEstacionamiento (Avion avion) { 
         areaEstacionamiento.remove(avion);
+        if (this.ciudad.equals("Madrid")){
+            main.setjTextFieldAEstacionamientoMadrid(main.getjTextFieldAEstacionamientoMadrid().replace(avion.getMyId()+" ", ""));
+        } else {
+            main.setjTextFieldAEstacionamientoBarcelona(main.getjTextFieldAEstacionamientoBarcelona().replace(avion.getMyId()+" ",""));
+        }
     }
     
     public void entrarAerovia(Avion avion){
         aerovia.add(avion);
-        
         if (this.ciudad.equals("Madrid")){
-            main.setjTextFieldAeroviaMadrid(avion.getMyId() + " " + main.getjTextFieldAeroviaMadrid());
+            main.setjTextFieldAeroviaMadrid(avion.getMyId() + "(" + avion.getPasajeros() + ") " + main.getjTextFieldAeroviaMadrid());
             logSistema.escribirLog("Aeropuerto " + this.ciudad + " Avion " + avion.getMyId() + "(" + avion.getPasajeros() + " pasajeros) entra a la aerovia Madrid-Barcelona");
         } else {
-            main.setjTextFieldAeroviaBarcelona(avion.getMyId() + " " + main.getjTextFieldAeroviaBarcelona());
+            main.setjTextFieldAeroviaBarcelona(avion.getMyId()+ "(" + avion.getPasajeros() + ") " + main.getjTextFieldAeroviaBarcelona());
             logSistema.escribirLog("Aeropuerto " + this.ciudad + " Avion " + avion.getMyId() + "(" + avion.getPasajeros() + " pasajeros) entra a la aerovia Barcelona-Madrid");
         }
         // Quedarse en autovia
@@ -516,6 +586,11 @@ public class Aeropuerto {
     
     public void salirAerovia(Avion avion){
         aerovia.remove(avion);
+        if (this.ciudad.equals("Madrid")){
+            main.setjTextFieldAeroviaMadrid(main.getjTextFieldAeroviaMadrid().replace(avion.getMyId()+"("+avion.getPasajeros()+") ", ""));
+        } else {
+            main.setjTextFieldAeroviaBarcelona(main.getjTextFieldAeroviaBarcelona().replace(avion.getMyId()+"("+avion.getPasajeros()+") ",""));
+        }
     }
     
     public void entrarPistas (Avion avion){
@@ -733,6 +808,11 @@ public class Aeropuerto {
                 condTaller.await();		
             }
             taller.remove(avion);
+            if (this.ciudad.equals("Madrid")){
+                main.setjTextFieldTallerMadrid(main.getjTextFieldTallerMadrid().replace(avion.getMyId()+" ", ""));
+            } else {
+                main.setjTextFieldTallerBarcelona(main.getjTextFieldTallerBarcelona().replace(avion.getMyId()+" ",""));
+            }
             condTaller.signalAll();
         } catch (InterruptedException e){
         } finally {
@@ -751,6 +831,11 @@ public class Aeropuerto {
     
     public void removeTransferCiudad(Autobus autobus){
         transfersCiudad.remove(autobus);
+        if (this.ciudad.equals("Madrid")){
+                main.setjTextFieldTransfersCiudadMadrid(main.getjTextFieldTransfersCiudadMadrid().replace(autobus.getMyId() + "(" + autobus.getPasajeros() + ") ", ""));
+        } else {
+                main.setjTextFieldTransfersCiudadBarcelona(main.getjTextFieldTransfersCiudadMadrid().replace(autobus.getMyId() + "(" + autobus.getPasajeros() + ") ",""));
+        }
     }
     
     public void addTransferAeropuerto(Autobus autobus){
@@ -764,5 +849,10 @@ public class Aeropuerto {
     
     public void removeTransferAeropuerto(Autobus autobus){
         transfersAeropuerto.remove(autobus);
+        if (this.ciudad.equals("Madrid")){
+                main.setjTextFieldTransfersAeropuertoMadrid(main.getjTextFieldTransfersAeropuertoMadrid().replace(autobus.getMyId() + "(" + autobus.getPasajeros() + ") ", ""));
+        } else {
+                main.setjTextFieldTransfersAeropuertoBarcelona(main.getjTextFieldTransfersAeropuertoMadrid().replace(autobus.getMyId() + "(" + autobus.getPasajeros() + ") ",""));
+        }
     }
 }
