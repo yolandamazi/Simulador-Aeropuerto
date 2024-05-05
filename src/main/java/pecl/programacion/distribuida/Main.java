@@ -744,6 +744,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objMadrid = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoMadrid");
             objMadrid.controlarPista(0, true);
             this.setjButtonPista1CerrarMadrid(true);
+            this.setjButtonPista1AbrirMadrid(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista1AbrirMadridActionPerformed
@@ -771,6 +772,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objMadrid = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoMadrid"); 
             objMadrid.controlarPista(1, false);
             this.setjButtonPista2AbrirMadrid(true);
+            this.setjButtonPista2CerrarMadrid(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista2CerrarMadridActionPerformed
@@ -781,6 +783,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objMadrid = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoMadrid");  
             objMadrid.controlarPista(0, false);
             this.setjButtonPista1AbrirMadrid(true);
+            this.setjButtonPista1CerrarMadrid(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista1CerrarMadridActionPerformed
@@ -791,6 +794,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objMadrid = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoMadrid");  
             objMadrid.controlarPista(1, true);
             this.setjButtonPista2CerrarMadrid(true);
+            this.setjButtonPista2AbrirMadrid(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista2AbrirMadridActionPerformed
@@ -801,6 +805,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objMadrid = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoMadrid");
             objMadrid.controlarPista(2, false);
             this.setjButtonPista3AbrirMadrid(true);
+            this.setjButtonPista3CerrarMadrid(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista3CerrarMadridActionPerformed
@@ -811,6 +816,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objMadrid = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoMadrid");
             objMadrid.controlarPista(2, true);
             this.setjButtonPista3CerrarMadrid(true);
+            this.setjButtonPista3AbrirMadrid(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista3AbrirMadridActionPerformed
@@ -821,6 +827,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objMadrid = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoMadrid"); 
             objMadrid.controlarPista(3, true);
             this.setjButtonPista4CerrarMadrid(true);
+            this.setjButtonPista4AbrirMadrid(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista4AbrirMadridActionPerformed
@@ -831,6 +838,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objMadrid = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoMadrid");
             objMadrid.controlarPista(3, false);
             this.setjButtonPista4AbrirMadrid(true);
+            this.setjButtonPista4CerrarMadrid(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista4CerrarMadridActionPerformed
@@ -846,6 +854,7 @@ public class Main extends javax.swing.JFrame {
             
             objBarcelona.controlarPista(0, true);
             this.setjButtonPista1CerrarBarcelona(true);
+            this.setjButtonPista1AbrirBarcelona(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista1AbrirBarcelonaActionPerformed
@@ -856,6 +865,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objBarcelona = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoBarcelona");  
             objBarcelona.controlarPista(1, false);
             this.setjButtonPista2AbrirBarcelona(true);
+            this.setjButtonPista2CerrarBarcelona(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista2CerrarBarcelonaActionPerformed
@@ -866,6 +876,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objBarcelona = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoBarcelona");  
             objBarcelona.controlarPista(0, false);
             this.setjButtonPista1AbrirBarcelona(true);
+            this.setjButtonPista1CerrarBarcelona(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista1CerrarBarcelonaActionPerformed
@@ -876,6 +887,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objBarcelona = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoBarcelona");
             objBarcelona.controlarPista(1, true);
             this.setjButtonPista2CerrarBarcelona(true);
+            this.setjButtonPista2AbrirBarcelona(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista2AbrirBarcelonaActionPerformed
@@ -886,6 +898,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objBarcelona = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoBarcelona");  
             objBarcelona.controlarPista(2, false);
             this.setjButtonPista3AbrirBarcelona(true);
+            this.setjButtonPista3CerrarBarcelona(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista3CerrarBarcelonaActionPerformed
@@ -896,6 +909,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objBarcelona = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoBarcelona");  
             objBarcelona.controlarPista(2, true);
             this.setjButtonPista3CerrarBarcelona(true);
+            this.setjButtonPista3AbrirBarcelona(false);
         } catch (Exception r){
         }
     }//GEN-LAST:event_jButtonPista3AbrirBarcelonaActionPerformed
@@ -906,6 +920,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objBarcelona = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoBarcelona");
             objBarcelona.controlarPista(3, true);
             this.setjButtonPista4CerrarBarcelona(true);
+            this.setjButtonPista4AbrirBarcelona(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista4AbrirBarcelonaActionPerformed
@@ -916,6 +931,7 @@ public class Main extends javax.swing.JFrame {
             InterfaceAeropuerto objBarcelona = (InterfaceAeropuerto) Naming.lookup("//127.0.0.1/ObjetoAeropuertoBarcelona");
             objBarcelona.controlarPista(3, false);
             this.setjButtonPista4AbrirBarcelona(true);
+            this.setjButtonPista4CerrarBarcelona(false);
         } catch (Exception e){
         }
     }//GEN-LAST:event_jButtonPista4CerrarBarcelonaActionPerformed
