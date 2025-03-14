@@ -947,3 +947,131 @@
 06-05-2024 22:35:27 Autobus: B-9221 es creado.
 06-05-2024 22:35:28 Aeropuerto Madrid Avion GS-2989(43 pasajeros) accede a Pista 2 para despegue
 06-05-2024 22:35:28 Autobus: B-9277 es creado.
+14-03-2025 13:30:55 Avion: BQ-5359 es creado.
+14-03-2025 13:30:55 Autobus: B-7584 es creado.
+14-03-2025 13:30:56 Autobus: B-705 es creado.
+14-03-2025 13:30:56 Avion: JP-5180 es creado.
+14-03-2025 13:30:56 Autobus: B-9934 es creado.
+14-03-2025 13:30:57 Autobus: B-1444 es creado.
+14-03-2025 13:30:58 Autobus: B-4915 es creado.
+14-03-2025 13:30:58 Autobus: B-4158 es creado.
+14-03-2025 13:30:59 Avion: EK-2230 es creado.
+14-03-2025 13:30:59 Autobus: B-4117 es creado.
+14-03-2025 13:30:59 Autobus: B-4679 es creado.
+14-03-2025 13:31:00 Autobus: B-6224 es creado.
+14-03-2025 13:31:01 Autobus: B-9732 es creado.
+14-03-2025 13:31:01 Avion: YL-2948 es creado.
+14-03-2025 13:31:02 Autobus: B-1500 es creado.
+14-03-2025 13:31:02 Autobus: B-8423 es creado.
+14-03-2025 13:31:02 Avion: KW-4624 es creado.
+14-03-2025 13:31:03 Autobus: B-1256 es creado.
+14-03-2025 13:31:04 Autobus: B-1476 es creado.
+14-03-2025 13:31:04 Autobus: B-1206 es creado.
+14-03-2025 13:31:05 Autobus: B-1177 es creado.
+14-03-2025 13:31:05 Avion: GB-6895 es creado.
+14-03-2025 13:31:06 Autobus: B-615 es creado.
+14-03-2025 13:31:06 Avion: PQ-2718 es creado.
+14-03-2025 13:31:06 Autobus: B-1526 es creado.
+14-03-2025 13:31:07 Autobus: B-452 es creado.
+14-03-2025 13:31:08 Autobus: B-3770 es creado.
+14-03-2025 13:31:08 Avion: GV-6478 es creado.
+14-03-2025 13:31:08 Autobus: B-6772 es creado.
+14-03-2025 13:31:09 Autobus: B-1907 es creado.
+14-03-2025 13:31:09 Avion: PX-3857 es creado.
+14-03-2025 13:31:10 Autobus: B-3650 es creado.
+14-03-2025 13:31:11 Avion: EY-5318 es creado.
+14-03-2025 13:31:11 Autobus: B-3092 es creado.
+14-03-2025 13:31:12 Autobus: B-1528 es creado.
+14-03-2025 13:31:12 Autobus: B-2529 es creado.
+14-03-2025 13:31:13 Autobus: B-3840 es creado.
+14-03-2025 13:31:13 Aeropuerto Madrid Avion JP-5180(0 pasajeros) accede a Pista 1 para despegue
+14-03-2025 13:31:13 Aeropuerto Barcelona Avion BQ-5359(0 pasajeros) accede a Pista 1 para despegue
+14-03-2025 13:31:13 Aeropuerto Madrid Avion EK-2230(0 pasajeros) accede a Pista 2 para despegue
+14-03-2025 13:31:13 Avion: OT-3743 es creado.
+14-03-2025 13:31:14 Autobus: B-9186 es creado.
+14-03-2025 13:31:14 Autobus: B-9121 es creado.
+14-03-2025 13:31:15 Aeropuerto Madrid Avion YL-2948(0 pasajeros) accede a Pista 3 para despegue
+14-03-2025 13:31:15 Autobus: B-3069 es creado.
+14-03-2025 13:31:15 Aeropuerto Madrid Avion KW-4624(0 pasajeros) accede a Pista 4 para despegue
+14-03-2025 13:31:15 Autobus: B-3655 es creado.
+14-03-2025 13:31:16 Avion: PS-6168 es creado.
+14-03-2025 13:31:16 Autobus: B-2424 es creado.
+14-03-2025 13:31:17 Aeropuerto Barcelona Avion BQ-5359(0 pasajeros) entra a la aerovia Barcelona-Madrid
+14-03-2025 13:31:17 Autobus: B-5315 es creado.
+14-03-2025 13:31:17 Avion: OV-8286 es creado.
+14-03-2025 13:31:18 Autobus: B-5738 es creado.
+14-03-2025 13:31:18 Aeropuerto Madrid Avion EK-2230(0 pasajeros) entra a la aerovia Madrid-Barcelona
+14-03-2025 13:31:18 Autobus: B-2148 es creado.
+14-03-2025 13:31:18 Avion: FO-798 es creado.
+14-03-2025 13:31:19 Aeropuerto Madrid Avion JP-5180(0 pasajeros) entra a la aerovia Madrid-Barcelona
+14-03-2025 13:31:19 Autobus: B-6631 es creado.
+14-03-2025 13:31:20 Autobus: B-1151 es creado.
+14-03-2025 13:31:20 Avion: YP-5243 es creado.
+14-03-2025 13:31:20 Aeropuerto Madrid Avion YL-2948(0 pasajeros) entra a la aerovia Madrid-Barcelona
+14-03-2025 13:31:20 Aeropuerto Barcelona Avion GB-6895(0 pasajeros) accede a Pista 1 para despegue
+14-03-2025 13:31:21 Autobus: B-9380 es creado.
+14-03-2025 13:31:21 Autobus: B-4969 es creado.
+14-03-2025 13:31:21 Aeropuerto Madrid Avion KW-4624(0 pasajeros) entra a la aerovia Madrid-Barcelona
+14-03-2025 13:31:22 Autobus: B-3187 es creado.
+14-03-2025 13:31:22 Avion: QV-3981 es creado.
+14-03-2025 13:31:22 Autobus: B-6140 es creado.
+14-03-2025 13:31:23 Autobus: B-3951 es creado.
+14-03-2025 13:31:24 Autobus: B-1364 es creado.
+14-03-2025 13:31:25 Avion: RF-690 es creado.
+14-03-2025 13:31:25 Autobus: B-2501 es creado.
+14-03-2025 13:31:25 Aeropuerto Barcelona Avion GB-6895(0 pasajeros) entra a la aerovia Barcelona-Madrid
+14-03-2025 13:31:26 Autobus: B-1220 es creado.
+14-03-2025 13:31:26 Aeropuerto Madrid Avion PQ-2718(11 pasajeros) accede a Pista 1 para despegue
+14-03-2025 13:31:26 Avion: GY-1896 es creado.
+14-03-2025 13:31:27 Autobus: B-4759 es creado.
+14-03-2025 13:31:27 Aeropuerto Barcelona Avion PX-3857(0 pasajeros) accede a Pista 1 para despegue
+14-03-2025 13:31:28 Autobus: B-4017 es creado.
+14-03-2025 13:31:28 Aeropuerto Madrid Avion EY-5318(107 pasajeros) accede a Pista 2 para despegue
+14-03-2025 13:31:28 Autobus: B-2563 es creado.
+14-03-2025 13:31:29 Autobus: B-5521 es creado.
+14-03-2025 13:31:29 Avion: TC-5807 es creado.
+14-03-2025 13:31:29 Autobus: B-4217 es creado.
+14-03-2025 13:31:30 Aeropuerto Barcelona Avion OT-3743(119 pasajeros) accede a Pista 2 para despegue
+14-03-2025 13:31:30 Autobus: B-2151 es creado.
+14-03-2025 13:31:31 Autobus: B-4248 es creado.
+14-03-2025 13:31:31 Autobus: B-9777 es creado.
+14-03-2025 13:31:32 Autobus: B-2448 es creado.
+14-03-2025 13:31:32 Avion: PN-4972 es creado.
+14-03-2025 13:31:32 Aeropuerto Barcelona Avion PX-3857(0 pasajeros) entra a la aerovia Barcelona-Madrid
+14-03-2025 13:31:33 Autobus: B-8455 es creado.
+14-03-2025 13:31:33 Aeropuerto Madrid Avion GV-6478(79 pasajeros) accede a Pista 3 para despegue
+14-03-2025 13:31:33 Aeropuerto Barcelona Avion QV-3981(16 pasajeros) accede a Pista 1 para despegue
+14-03-2025 13:31:33 Aeropuerto Madrid Avion PQ-2718(11 pasajeros) entra a la aerovia Madrid-Barcelona
+14-03-2025 13:31:33 Avion: RR-3426 es creado.
+14-03-2025 13:31:33 Autobus: B-3200 es creado.
+14-03-2025 13:31:33 Aeropuerto Madrid Avion EY-5318(107 pasajeros) entra a la aerovia Madrid-Barcelona
+14-03-2025 13:31:34 Aeropuerto Barcelona Avion OT-3743(119 pasajeros) entra a la aerovia Barcelona-Madrid
+14-03-2025 13:31:34 Autobus: B-479 es creado.
+14-03-2025 13:31:34 Avion: FC-5283 es creado.
+14-03-2025 13:31:35 Autobus: B-3325 es creado.
+14-03-2025 13:31:36 Autobus: B-42 es creado.
+14-03-2025 13:31:36 Avion: WP-3317 es creado.
+14-03-2025 13:31:36 Aeropuerto Madrid Avion OV-8286(37 pasajeros) accede a Pista 1 para despegue
+14-03-2025 13:31:37 Aeropuerto Madrid Avion PS-6168(37 pasajeros) accede a Pista 2 para despegue
+14-03-2025 13:31:37 Aeropuerto Madrid Avion GV-6478(79 pasajeros) entra a la aerovia Madrid-Barcelona
+14-03-2025 13:31:37 Autobus: B-1587 es creado.
+14-03-2025 13:31:37 Autobus: B-1568 es creado.
+14-03-2025 13:31:38 Aeropuerto Barcelona Avion YP-5243(28 pasajeros) accede a Pista 2 para despegue
+14-03-2025 13:31:38 Autobus: B-1548 es creado.
+14-03-2025 13:31:38 Aeropuerto Barcelona Avion QV-3981(16 pasajeros) entra a la aerovia Barcelona-Madrid
+14-03-2025 13:31:38 Avion: EZ-5557 es creado.
+14-03-2025 13:31:39 Autobus: B-1477 es creado.
+14-03-2025 13:31:40 Autobus: B-3578 es creado.
+14-03-2025 13:31:41 Autobus: B-4209 es creado.
+14-03-2025 13:31:41 Aeropuerto Madrid Avion OV-8286(37 pasajeros) entra a la aerovia Madrid-Barcelona
+14-03-2025 13:31:41 Autobus: B-7205 es creado.
+14-03-2025 13:31:41 Avion: DB-5466 es creado.
+14-03-2025 13:31:42 Autobus: B-8282 es creado.
+14-03-2025 13:31:42 Aeropuerto Barcelona Avion YP-5243(28 pasajeros) entra a la aerovia Barcelona-Madrid
+14-03-2025 13:31:42 Autobus: B-2186 es creado.
+14-03-2025 13:31:43 Aeropuerto Madrid Avion PS-6168(37 pasajeros) entra a la aerovia Madrid-Barcelona
+14-03-2025 13:31:43 Autobus: B-6676 es creado.
+14-03-2025 13:31:44 Aeropuerto Madrid Avion RF-690(23 pasajeros) accede a Pista 1 para despegue
+14-03-2025 13:31:44 Avion: JQ-5126 es creado.
+14-03-2025 13:31:44 Autobus: B-5968 es creado.
+14-03-2025 13:31:45 Autobus: B-5031 es creado.
