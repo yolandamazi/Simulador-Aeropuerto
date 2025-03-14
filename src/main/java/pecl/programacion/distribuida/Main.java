@@ -1,19 +1,9 @@
 package pecl.programacion.distribuida;
 
-import java.io.*;
 import static java.lang.Thread.sleep;
-import java.net.*;
 import java.rmi.*;
-import java.util.ArrayList;
-import pecl.programacion.concurrente.Avion;
 
 public class Main extends javax.swing.JFrame {
-    //Attributes
-    ServerSocket servidor;
-    Socket conexion;
-    DataOutputStream salida;
-    DataInputStream entrada;
-    int num = 0;
     
     public Main(){
         initComponents();

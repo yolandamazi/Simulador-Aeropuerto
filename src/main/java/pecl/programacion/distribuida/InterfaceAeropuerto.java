@@ -1,9 +1,7 @@
 package pecl.programacion.distribuida;
 
-import pecl.programacion.concurrente.*;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
-import java.util.ArrayList;
 
 public interface InterfaceAeropuerto extends Remote {
     

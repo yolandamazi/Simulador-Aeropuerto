@@ -1,0 +1,949 @@
+06-05-2024 22:23:49 Avion: ZT-6695 es creado.
+06-05-2024 22:23:49 Autobus: B-693 es creado.
+06-05-2024 22:23:50 Autobus: B-8192 es creado.
+06-05-2024 22:23:50 Autobus: B-8936 es creado.
+06-05-2024 22:23:51 Avion: AX-8298 es creado.
+06-05-2024 22:23:51 Autobus: B-7777 es creado.
+06-05-2024 22:23:52 Avion: DH-7373 es creado.
+06-05-2024 22:23:52 Autobus: B-8052 es creado.
+06-05-2024 22:23:53 Autobus: B-3715 es creado.
+06-05-2024 22:23:53 Autobus: B-6478 es creado.
+06-05-2024 22:23:54 Autobus: B-407 es creado.
+06-05-2024 22:23:54 Autobus: B-9329 es creado.
+06-05-2024 22:23:55 Avion: VY-582 es creado.
+06-05-2024 22:23:55 Autobus: B-7012 es creado.
+06-05-2024 22:23:56 Autobus: B-6012 es creado.
+06-05-2024 22:23:57 Autobus: B-1651 es creado.
+06-05-2024 22:23:57 Avion: WG-125 es creado.
+06-05-2024 22:23:58 Autobus: B-683 es creado.
+06-05-2024 22:23:58 Autobus: B-9205 es creado.
+06-05-2024 22:23:59 Avion: KR-9620 es creado.
+06-05-2024 22:23:59 Autobus: B-1598 es creado.
+06-05-2024 22:24:00 Autobus: B-535 es creado.
+06-05-2024 22:24:01 Autobus: B-3930 es creado.
+06-05-2024 22:24:01 Avion: AX-6598 es creado.
+06-05-2024 22:24:01 Autobus: B-854 es creado.
+06-05-2024 22:24:02 Autobus: B-6834 es creado.
+06-05-2024 22:24:02 Autobus: B-2497 es creado.
+06-05-2024 22:24:03 Autobus: B-7241 es creado.
+06-05-2024 22:24:04 Avion: TB-5648 es creado.
+06-05-2024 22:24:04 Autobus: B-8862 es creado.
+06-05-2024 22:24:04 Aeropuerto Madrid Avion AX-8298(14 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:24:04 Autobus: B-6101 es creado.
+06-05-2024 22:24:05 Autobus: B-2863 es creado.
+06-05-2024 22:24:05 Avion: KZ-8170 es creado.
+06-05-2024 22:24:06 Autobus: B-5760 es creado.
+06-05-2024 22:24:07 Autobus: B-5065 es creado.
+06-05-2024 22:24:07 Autobus: B-7561 es creado.
+06-05-2024 22:24:08 Avion: TR-2271 es creado.
+06-05-2024 22:24:08 Autobus: B-2127 es creado.
+06-05-2024 22:24:09 Avion: IQ-7937 es creado.
+06-05-2024 22:24:09 Autobus: B-7682 es creado.
+06-05-2024 22:24:10 Autobus: B-7619 es creado.
+06-05-2024 22:24:11 Autobus: B-3370 es creado.
+06-05-2024 22:24:11 Autobus: B-924 es creado.
+06-05-2024 22:24:12 Autobus: B-2190 es creado.
+06-05-2024 22:24:12 Avion: JG-3933 es creado.
+06-05-2024 22:24:12 Autobus: B-7477 es creado.
+06-05-2024 22:24:13 Autobus: B-6817 es creado.
+06-05-2024 22:24:14 Aeropuerto Madrid Avion KR-9620(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:24:14 Autobus: B-3074 es creado.
+06-05-2024 22:24:14 Avion: PA-3960 es creado.
+06-05-2024 22:24:15 Autobus: B-5199 es creado.
+06-05-2024 22:24:15 Autobus: B-5574 es creado.
+06-05-2024 22:24:16 Aeropuerto Madrid Avion AX-6598(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:24:16 Aeropuerto Madrid Avion KR-9620(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:24:16 Autobus: B-9340 es creado.
+06-05-2024 22:24:17 Avion: MA-1581 es creado.
+06-05-2024 22:24:17 Autobus: B-5602 es creado.
+06-05-2024 22:24:17 Autobus: B-4142 es creado.
+06-05-2024 22:24:18 Autobus: B-3715 es creado.
+06-05-2024 22:24:19 Aeropuerto Barcelona Avion WG-125(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:24:19 Autobus: B-9501 es creado.
+06-05-2024 22:24:19 Aeropuerto Madrid Avion AX-6598(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:24:19 Avion: LG-661 es creado.
+06-05-2024 22:24:20 Aeropuerto Madrid Avion TB-5648(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:24:20 Autobus: B-5796 es creado.
+06-05-2024 22:24:20 Autobus: B-2859 es creado.
+06-05-2024 22:24:21 Avion: XK-87 es creado.
+06-05-2024 22:24:21 Autobus: B-7249 es creado.
+06-05-2024 22:24:21 Aeropuerto Madrid Avion KZ-8170(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:24:22 Aeropuerto Barcelona Avion WG-125(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:24:22 Autobus: B-7294 es creado.
+06-05-2024 22:24:23 Autobus: B-4922 es creado.
+06-05-2024 22:24:23 Aeropuerto Madrid Avion TB-5648(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:24:23 Avion: ET-4813 es creado.
+06-05-2024 22:24:23 Autobus: B-5372 es creado.
+06-05-2024 22:24:24 Autobus: B-5582 es creado.
+06-05-2024 22:24:25 Autobus: B-4554 es creado.
+06-05-2024 22:24:25 Aeropuerto Barcelona Avion JG-3933(13 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:24:25 Avion: SM-914 es creado.
+06-05-2024 22:24:26 Autobus: B-1932 es creado.
+06-05-2024 22:24:27 Autobus: B-2470 es creado.
+06-05-2024 22:24:27 Avion: MA-6474 es creado.
+06-05-2024 22:24:27 Aeropuerto Madrid Avion KZ-8170(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:24:28 Autobus: B-5069 es creado.
+06-05-2024 22:24:28 Autobus: B-5278 es creado.
+06-05-2024 22:24:28 Aeropuerto Madrid Avion PA-3960(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:24:29 Avion: DC-4750 es creado.
+06-05-2024 22:24:29 Autobus: B-5075 es creado.
+06-05-2024 22:24:30 Autobus: B-6677 es creado.
+06-05-2024 22:24:30 Aeropuerto Barcelona Avion JG-3933(13 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:24:30 Avion: ED-7430 es creado.
+06-05-2024 22:24:31 Autobus: B-528 es creado.
+06-05-2024 22:24:31 Autobus: B-912 es creado.
+06-05-2024 22:24:32 Autobus: B-5055 es creado.
+06-05-2024 22:24:32 Avion: KG-2054 es creado.
+06-05-2024 22:24:33 Autobus: B-7322 es creado.
+06-05-2024 22:24:33 Aeropuerto Madrid Avion PA-3960(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:24:33 Autobus: B-4234 es creado.
+06-05-2024 22:24:34 Autobus: B-7715 es creado.
+06-05-2024 22:24:34 Avion: KM-7144 es creado.
+06-05-2024 22:24:34 Aeropuerto Barcelona Avion MA-1581(24 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:24:34 Autobus: B-1956 es creado.
+06-05-2024 22:24:35 Aeropuerto Barcelona Avion LG-661(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:24:35 Autobus: B-9916 es creado.
+06-05-2024 22:24:36 Avion: BJ-8477 es creado.
+06-05-2024 22:24:36 Autobus: B-9990 es creado.
+06-05-2024 22:24:37 Autobus: B-2701 es creado.
+06-05-2024 22:24:37 Autobus: B-2143 es creado.
+06-05-2024 22:24:38 Avion: CD-1964 es creado.
+06-05-2024 22:24:38 Autobus: B-177 es creado.
+06-05-2024 22:24:39 Aeropuerto Barcelona Avion LG-661(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:24:39 Autobus: B-4224 es creado.
+06-05-2024 22:24:39 Aeropuerto Barcelona Avion MA-1581(24 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:24:40 Autobus: B-5487 es creado.
+06-05-2024 22:24:40 Aeropuerto Barcelona Avion XK-87(66 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:24:40 Avion: IB-9023 es creado.
+06-05-2024 22:24:41 Aeropuerto Madrid Avion MA-6474(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:24:41 Autobus: B-6655 es creado.
+06-05-2024 22:24:41 Autobus: B-9961 es creado.
+06-05-2024 22:24:41 Aeropuerto Madrid Avion SM-914(19 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:24:42 Autobus: B-6403 es creado.
+06-05-2024 22:24:43 Autobus: B-5125 es creado.
+06-05-2024 22:24:43 Avion: BV-3726 es creado.
+06-05-2024 22:24:44 Autobus: B-3469 es creado.
+06-05-2024 22:24:44 Autobus: B-6668 es creado.
+06-05-2024 22:24:45 Avion: QS-8264 es creado.
+06-05-2024 22:24:45 Autobus: B-919 es creado.
+06-05-2024 22:24:46 Autobus: B-8820 es creado.
+06-05-2024 22:24:47 Autobus: B-2355 es creado.
+06-05-2024 22:24:47 Autobus: B-2065 es creado.
+06-05-2024 22:24:47 Avion: YL-5311 es creado.
+06-05-2024 22:24:48 Autobus: B-693 es creado.
+06-05-2024 22:24:49 Autobus: B-4851 es creado.
+06-05-2024 22:24:49 Avion: HS-5482 es creado.
+06-05-2024 22:24:49 Autobus: B-6761 es creado.
+06-05-2024 22:24:50 Autobus: B-3485 es creado.
+06-05-2024 22:24:51 Autobus: B-2846 es creado.
+06-05-2024 22:24:51 Aeropuerto Barcelona Avion BJ-8477(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:24:51 Autobus: B-3028 es creado.
+06-05-2024 22:24:52 Avion: PM-9005 es creado.
+06-05-2024 22:24:52 Autobus: B-3423 es creado.
+06-05-2024 22:24:53 Autobus: B-5751 es creado.
+06-05-2024 22:24:53 Aeropuerto Barcelona Avion ET-4813(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:24:53 Aeropuerto Madrid Avion KG-2054(0 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:24:54 Autobus: B-4321 es creado.
+06-05-2024 22:24:54 Avion: KE-3023 es creado.
+06-05-2024 22:24:54 Autobus: B-5917 es creado.
+06-05-2024 22:24:55 Aeropuerto Barcelona Avion BJ-8477(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:24:55 Autobus: B-3190 es creado.
+06-05-2024 22:24:55 Avion: ES-1675 es creado.
+06-05-2024 22:24:56 Autobus: B-4878 es creado.
+06-05-2024 22:24:56 Aeropuerto Barcelona Avion IB-9023(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:24:57 Autobus: B-5135 es creado.
+06-05-2024 22:24:57 Avion: WE-248 es creado.
+06-05-2024 22:24:57 Aeropuerto Madrid Avion KG-2054(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:24:58 Autobus: B-2337 es creado.
+06-05-2024 22:24:59 Autobus: B-3184 es creado.
+06-05-2024 22:24:59 Avion: XH-6309 es creado.
+06-05-2024 22:25:00 Autobus: B-1069 es creado.
+06-05-2024 22:25:00 Aeropuerto Barcelona Avion ET-4813(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:25:00 Autobus: B-6067 es creado.
+06-05-2024 22:25:01 Autobus: B-8291 es creado.
+06-05-2024 22:25:02 Avion: VR-8081 es creado.
+06-05-2024 22:25:02 Autobus: B-8187 es creado.
+06-05-2024 22:25:02 Aeropuerto Barcelona Avion IB-9023(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:25:03 Autobus: B-6172 es creado.
+06-05-2024 22:25:03 Aeropuerto Barcelona Avion KR-9620 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:25:03 Avion: YR-968 es creado.
+06-05-2024 22:25:04 Autobus: B-9260 es creado.
+06-05-2024 22:25:04 Autobus: B-1743 es creado.
+06-05-2024 22:25:05 Autobus: B-7106 es creado.
+06-05-2024 22:25:05 Avion: VL-8149 es creado.
+06-05-2024 22:25:06 Autobus: B-7489 es creado.
+06-05-2024 22:25:06 Aeropuerto Madrid Avion CD-1964(48 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:25:07 Autobus: B-2740 es creado.
+06-05-2024 22:25:07 Autobus: B-9647 es creado.
+06-05-2024 22:25:08 Avion: AZ-4507 es creado.
+06-05-2024 22:25:08 Autobus: B-8249 es creado.
+06-05-2024 22:25:09 Autobus: B-5101 es creado.
+06-05-2024 22:25:09 Autobus: B-8571 es creado.
+06-05-2024 22:25:10 Autobus: B-8030 es creado.
+06-05-2024 22:25:10 Aeropuerto Barcelona Avion AX-6598 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:25:10 Avion: LQ-1752 es creado.
+06-05-2024 22:25:11 Autobus: B-8991 es creado.
+06-05-2024 22:25:12 Autobus: B-5346 es creado.
+06-05-2024 22:25:12 Avion: XN-5735 es creado.
+06-05-2024 22:25:12 Aeropuerto Barcelona Avion KE-3023(28 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:25:13 Autobus: B-1491 es creado.
+06-05-2024 22:25:13 Aeropuerto Madrid Avion CD-1964(48 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:25:13 Autobus: B-9969 es creado.
+06-05-2024 22:25:14 Aeropuerto Barcelona Avion PM-9005(28 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:25:14 Autobus: B-5232 es creado.
+06-05-2024 22:25:14 Avion: US-5232 es creado.
+06-05-2024 22:25:15 Autobus: B-17 es creado.
+06-05-2024 22:25:15 Aeropuerto Barcelona Avion KE-3023(28 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:25:16 Avion: ZQ-8188 es creado.
+06-05-2024 22:25:16 Autobus: B-2090 es creado.
+06-05-2024 22:25:16 Aeropuerto Barcelona Avion ES-1675(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:25:16 Autobus: B-4853 es creado.
+06-05-2024 22:25:17 Autobus: B-9441 es creado.
+06-05-2024 22:25:18 Avion: KS-3253 es creado.
+06-05-2024 22:25:18 Autobus: B-2952 es creado.
+06-05-2024 22:25:19 Autobus: B-458 es creado.
+06-05-2024 22:25:19 Aeropuerto Barcelona Avion ES-1675(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:25:19 Avion: MQ-9222 es creado.
+06-05-2024 22:25:19 Autobus: B-7877 es creado.
+06-05-2024 22:25:20 Aeropuerto Barcelona Avion PM-9005(28 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:25:20 Autobus: B-6699 es creado.
+06-05-2024 22:25:20 Aeropuerto Madrid Avion LG-661 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:25:21 Aeropuerto Madrid Avion YR-968(54 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:25:21 Avion: RE-5106 es creado.
+06-05-2024 22:25:21 Autobus: B-6392 es creado.
+06-05-2024 22:25:22 Autobus: B-2555 es creado.
+06-05-2024 22:25:22 Avion: XJ-7089 es creado.
+06-05-2024 22:25:22 Autobus: B-4433 es creado.
+06-05-2024 22:25:23 Autobus: B-8615 es creado.
+06-05-2024 22:25:24 Avion: II-2210 es creado.
+06-05-2024 22:25:24 Autobus: B-4140 es creado.
+06-05-2024 22:25:25 Autobus: B-3088 es creado.
+06-05-2024 22:25:25 Aeropuerto Barcelona Avion PA-3960 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:25:25 Autobus: B-4954 es creado.
+06-05-2024 22:25:26 Avion: LD-2613 es creado.
+06-05-2024 22:25:26 Aeropuerto Madrid Avion YR-968(54 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:25:26 Autobus: B-7067 es creado.
+06-05-2024 22:25:27 Autobus: B-1382 es creado.
+06-05-2024 22:25:27 Avion: UC-9476 es creado.
+06-05-2024 22:25:27 Autobus: B-1045 es creado.
+06-05-2024 22:25:28 Autobus: B-8791 es creado.
+06-05-2024 22:25:29 Avion: NG-5246 es creado.
+06-05-2024 22:25:29 Autobus: B-6378 es creado.
+06-05-2024 22:25:29 Aeropuerto Madrid Avion MA-1581 accede a Embarque 2 para desembarcar 24 pasajeros
+06-05-2024 22:25:30 Aeropuerto Barcelona Avion XH-6309(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:25:30 Aeropuerto Barcelona Avion VR-8081(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:25:30 Autobus: B-6557 es creado.
+06-05-2024 22:25:30 Aeropuerto Madrid Avion LQ-1752(0 pasajeros) accede a Pista 4 para despegue
+06-05-2024 22:25:31 Autobus: B-6105 es creado.
+06-05-2024 22:25:31 Avion: AC-1292 es creado.
+06-05-2024 22:25:31 Autobus: B-8931 es creado.
+06-05-2024 22:25:32 Avion: GG-5744 es creado.
+06-05-2024 22:25:32 Autobus: B-9718 es creado.
+06-05-2024 22:25:33 Autobus: B-1956 es creado.
+06-05-2024 22:25:33 Aeropuerto Madrid Avion LQ-1752(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:25:33 Avion: VD-5485 es creado.
+06-05-2024 22:25:34 Autobus: B-135 es creado.
+06-05-2024 22:25:34 Aeropuerto Barcelona Avion VR-8081(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:25:34 Aeropuerto Barcelona Avion XH-6309(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:25:35 Autobus: B-9389 es creado.
+06-05-2024 22:25:35 Avion: RO-9799 es creado.
+06-05-2024 22:25:35 Autobus: B-2580 es creado.
+06-05-2024 22:25:36 Autobus: B-3562 es creado.
+06-05-2024 22:25:37 Aeropuerto Madrid Avion US-5232(0 pasajeros) accede a Pista 4 para despegue
+06-05-2024 22:25:37 Autobus: B-3505 es creado.
+06-05-2024 22:25:37 Aeropuerto Barcelona Avion VL-8149(36 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:25:38 Autobus: B-9188 es creado.
+06-05-2024 22:25:38 Avion: LK-2806 es creado.
+06-05-2024 22:25:38 Aeropuerto Barcelona Avion XN-5735(137 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:25:38 Autobus: B-4895 es creado.
+06-05-2024 22:25:39 Autobus: B-4100 es creado.
+06-05-2024 22:25:39 Avion: DM-3294 es creado.
+06-05-2024 22:25:40 Aeropuerto Madrid Avion BJ-8477 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:25:40 Autobus: B-5494 es creado.
+06-05-2024 22:25:41 Autobus: B-7681 es creado.
+06-05-2024 22:25:41 Autobus: B-4592 es creado.
+06-05-2024 22:25:42 Autobus: B-3067 es creado.
+06-05-2024 22:25:42 Avion: DD-7809 es creado.
+06-05-2024 22:25:42 Autobus: B-1663 es creado.
+06-05-2024 22:25:43 Autobus: B-2735 es creado.
+06-05-2024 22:25:44 Autobus: B-895 es creado.
+06-05-2024 22:25:44 Avion: SE-6659 es creado.
+06-05-2024 22:25:44 Autobus: B-1428 es creado.
+06-05-2024 22:25:45 Autobus: B-9707 es creado.
+06-05-2024 22:25:46 Autobus: B-9935 es creado.
+06-05-2024 22:25:47 Avion: WV-8223 es creado.
+06-05-2024 22:25:47 Autobus: B-6310 es creado.
+06-05-2024 22:25:48 Autobus: B-9219 es creado.
+06-05-2024 22:25:49 Autobus: B-7598 es creado.
+06-05-2024 22:25:49 Avion: SE-912 es creado.
+06-05-2024 22:25:50 Autobus: B-5757 es creado.
+06-05-2024 22:25:50 Autobus: B-8225 es creado.
+06-05-2024 22:25:51 Avion: WX-278 es creado.
+06-05-2024 22:25:51 Autobus: B-9810 es creado.
+06-05-2024 22:25:52 Autobus: B-6765 es creado.
+06-05-2024 22:25:52 Aeropuerto Madrid Avion IB-9023 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:25:52 Aeropuerto Madrid Avion MQ-9222(0 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:25:52 Aeropuerto Madrid Avion ZQ-8188(0 pasajeros) accede a Pista 4 para despegue
+06-05-2024 22:25:53 Autobus: B-475 es creado.
+06-05-2024 22:25:53 Avion: LS-9184 es creado.
+06-05-2024 22:25:53 Autobus: B-2773 es creado.
+06-05-2024 22:25:54 Autobus: B-9767 es creado.
+06-05-2024 22:25:54 Aeropuerto Barcelona Avion KS-3253(74 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:25:54 Aeropuerto Barcelona Avion XJ-7089(52 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:26:54 Autobus: B-8585 es creado.
+06-05-2024 22:26:54 Avion: HC-1043 es creado.
+06-05-2024 22:26:54 Autobus: B-4022 es creado.
+06-05-2024 22:26:55 Avion: PR-6045 es creado.
+06-05-2024 22:26:55 Autobus: B-4407 es creado.
+06-05-2024 22:26:56 Autobus: B-4609 es creado.
+06-05-2024 22:26:57 Autobus: B-242 es creado.
+06-05-2024 22:26:57 Avion: UZ-7758 es creado.
+06-05-2024 22:26:57 Autobus: B-5419 es creado.
+06-05-2024 22:26:58 Autobus: B-5038 es creado.
+06-05-2024 22:26:58 Autobus: B-4635 es creado.
+06-05-2024 22:26:59 Autobus: B-6544 es creado.
+06-05-2024 22:26:59 Avion: RR-8657 es creado.
+06-05-2024 22:27:00 Autobus: B-1364 es creado.
+06-05-2024 22:27:01 Autobus: B-8511 es creado.
+06-05-2024 22:27:02 Autobus: B-3617 es creado.
+06-05-2024 22:27:02 Avion: MH-6544 es creado.
+06-05-2024 22:27:02 Autobus: B-803 es creado.
+06-05-2024 22:27:03 Avion: SM-2036 es creado.
+06-05-2024 22:27:03 Autobus: B-7494 es creado.
+06-05-2024 22:27:04 Autobus: B-282 es creado.
+06-05-2024 22:27:05 Autobus: B-5234 es creado.
+06-05-2024 22:27:05 Avion: ZO-8734 es creado.
+06-05-2024 22:27:06 Autobus: B-598 es creado.
+06-05-2024 22:27:06 Avion: LW-5718 es creado.
+06-05-2024 22:27:06 Autobus: B-4719 es creado.
+06-05-2024 22:27:07 Autobus: B-7070 es creado.
+06-05-2024 22:27:08 Autobus: B-534 es creado.
+06-05-2024 22:27:08 Autobus: B-4431 es creado.
+06-05-2024 22:27:09 Avion: RY-5410 es creado.
+06-05-2024 22:27:09 Autobus: B-6040 es creado.
+06-05-2024 22:27:10 Autobus: B-1634 es creado.
+06-05-2024 22:27:10 Aeropuerto Barcelona Avion HC-1043(17 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:27:11 Autobus: B-7038 es creado.
+06-05-2024 22:27:11 Aeropuerto Barcelona Avion PR-6045(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:27:11 Avion: PG-2416 es creado.
+06-05-2024 22:27:12 Autobus: B-6142 es creado.
+06-05-2024 22:27:12 Autobus: B-3837 es creado.
+06-05-2024 22:27:12 Avion: HF-7668 es creado.
+06-05-2024 22:27:13 Autobus: B-3380 es creado.
+06-05-2024 22:27:14 Autobus: B-3921 es creado.
+06-05-2024 22:27:15 Autobus: B-3978 es creado.
+06-05-2024 22:27:15 Avion: VS-1496 es creado.
+06-05-2024 22:27:15 Autobus: B-8460 es creado.
+06-05-2024 22:27:16 Autobus: B-6516 es creado.
+06-05-2024 22:27:17 Autobus: B-2652 es creado.
+06-05-2024 22:27:17 Avion: UX-1376 es creado.
+06-05-2024 22:27:18 Autobus: B-1968 es creado.
+06-05-2024 22:27:18 Aeropuerto Madrid Avion SM-2036(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:27:18 Aeropuerto Barcelona Avion RR-8657(15 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:27:18 Autobus: B-3910 es creado.
+06-05-2024 22:27:18 Avion: FU-4268 es creado.
+06-05-2024 22:27:19 Autobus: B-3439 es creado.
+06-05-2024 22:27:20 Autobus: B-2530 es creado.
+06-05-2024 22:27:21 Autobus: B-7691 es creado.
+06-05-2024 22:27:21 Avion: IS-6732 es creado.
+06-05-2024 22:27:22 Autobus: B-2824 es creado.
+06-05-2024 22:27:22 Aeropuerto Madrid Avion SM-2036(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:27:22 Aeropuerto Madrid Avion LW-5718(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:27:22 Autobus: B-6330 es creado.
+06-05-2024 22:27:22 Aeropuerto Madrid Avion MH-6544(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:27:23 Aeropuerto Barcelona Avion RR-8657(15 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:27:23 Autobus: B-1929 es creado.
+06-05-2024 22:27:23 Aeropuerto Madrid Avion ZO-8734(33 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:27:23 Autobus: B-8668 es creado.
+06-05-2024 22:27:23 Avion: QG-2987 es creado.
+06-05-2024 22:27:24 Autobus: B-7642 es creado.
+06-05-2024 22:27:25 Autobus: B-3481 es creado.
+06-05-2024 22:27:25 Avion: SR-5532 es creado.
+06-05-2024 22:27:25 Autobus: B-3426 es creado.
+06-05-2024 22:27:26 Aeropuerto Madrid Avion LW-5718(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:27:26 Autobus: B-7484 es creado.
+06-05-2024 22:27:26 Avion: SD-9923 es creado.
+06-05-2024 22:27:27 Autobus: B-3146 es creado.
+06-05-2024 22:27:28 Autobus: B-6258 es creado.
+06-05-2024 22:27:28 Aeropuerto Madrid Avion MH-6544(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:27:29 Autobus: B-7115 es creado.
+06-05-2024 22:27:29 Aeropuerto Madrid Avion ZO-8734(33 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:27:29 Avion: ZI-4038 es creado.
+06-05-2024 22:27:29 Autobus: B-7927 es creado.
+06-05-2024 22:27:30 Autobus: B-777 es creado.
+06-05-2024 22:27:31 Autobus: B-4084 es creado.
+06-05-2024 22:27:31 Avion: TM-608 es creado.
+06-05-2024 22:27:32 Autobus: B-1204 es creado.
+06-05-2024 22:27:32 Autobus: B-6604 es creado.
+06-05-2024 22:27:32 Avion: FY-7516 es creado.
+06-05-2024 22:27:33 Autobus: B-8321 es creado.
+06-05-2024 22:27:34 Autobus: B-6471 es creado.
+06-05-2024 22:27:34 Aeropuerto Madrid Avion RY-5410(10 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:27:34 Autobus: B-6087 es creado.
+06-05-2024 22:27:35 Avion: TX-5455 es creado.
+06-05-2024 22:27:35 Autobus: B-1486 es creado.
+06-05-2024 22:27:36 Autobus: B-6871 es creado.
+06-05-2024 22:27:36 Avion: EP-1013 es creado.
+06-05-2024 22:27:37 Aeropuerto Madrid Avion FU-4268(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:27:37 Autobus: B-1853 es creado.
+06-05-2024 22:27:38 Autobus: B-4777 es creado.
+06-05-2024 22:27:38 Autobus: B-4252 es creado.
+06-05-2024 22:27:39 Aeropuerto Madrid Avion RY-5410(10 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:27:39 Autobus: B-5618 es creado.
+06-05-2024 22:27:39 Avion: HO-3529 es creado.
+06-05-2024 22:27:40 Aeropuerto Madrid Avion UX-1376(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:27:40 Aeropuerto Barcelona Avion QG-2987(0 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:27:40 Autobus: B-7414 es creado.
+06-05-2024 22:27:40 Aeropuerto Madrid Avion PG-2416(21 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:27:41 Autobus: B-6513 es creado.
+06-05-2024 22:27:41 Autobus: B-1212 es creado.
+06-05-2024 22:27:41 Avion: FN-14 es creado.
+06-05-2024 22:27:42 Autobus: B-6055 es creado.
+06-05-2024 22:27:43 Autobus: B-6819 es creado.
+06-05-2024 22:27:43 Aeropuerto Madrid Avion FU-4268(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:27:43 Aeropuerto Madrid Avion UX-1376(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:27:44 Avion: DG-2934 es creado.
+06-05-2024 22:27:44 Autobus: B-5929 es creado.
+06-05-2024 22:27:44 Aeropuerto Barcelona Avion QG-2987(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:27:45 Autobus: B-4444 es creado.
+06-05-2024 22:27:45 Avion: ZG-1922 es creado.
+06-05-2024 22:27:46 Autobus: B-5324 es creado.
+06-05-2024 22:27:46 Avion: MZ-8239 es creado.
+06-05-2024 22:27:47 Autobus: B-5099 es creado.
+06-05-2024 22:27:47 Aeropuerto Madrid Avion PG-2416(21 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:27:47 Autobus: B-7119 es creado.
+06-05-2024 22:27:48 Avion: UZ-1517 es creado.
+06-05-2024 22:27:48 Autobus: B-5978 es creado.
+06-05-2024 22:27:49 Autobus: B-8895 es creado.
+06-05-2024 22:27:50 Autobus: B-5211 es creado.
+06-05-2024 22:29:48 Avion: IP-8246 es creado.
+06-05-2024 22:29:48 Autobus: B-2194 es creado.
+06-05-2024 22:29:48 Autobus: B-3171 es creado.
+06-05-2024 22:29:49 Avion: DF-7765 es creado.
+06-05-2024 22:29:49 Autobus: B-1714 es creado.
+06-05-2024 22:29:50 Autobus: B-626 es creado.
+06-05-2024 22:29:51 Autobus: B-4114 es creado.
+06-05-2024 22:29:51 Avion: CV-4512 es creado.
+06-05-2024 22:29:51 Autobus: B-9015 es creado.
+06-05-2024 22:29:52 Autobus: B-7383 es creado.
+06-05-2024 22:29:52 Autobus: B-1684 es creado.
+06-05-2024 22:29:53 Avion: XD-7078 es creado.
+06-05-2024 22:29:53 Autobus: B-9776 es creado.
+06-05-2024 22:29:54 Autobus: B-469 es creado.
+06-05-2024 22:29:55 Autobus: B-4111 es creado.
+06-05-2024 22:29:55 Avion: RN-9723 es creado.
+06-05-2024 22:29:56 Autobus: B-800 es creado.
+06-05-2024 22:29:56 Autobus: B-6508 es creado.
+06-05-2024 22:29:57 Autobus: B-2208 es creado.
+06-05-2024 22:29:57 Autobus: B-8703 es creado.
+06-05-2024 22:29:58 Avion: AC-599 es creado.
+06-05-2024 22:29:58 Autobus: B-2698 es creado.
+06-05-2024 22:29:59 Autobus: B-1618 es creado.
+06-05-2024 22:30:00 Avion: DV-7948 es creado.
+06-05-2024 22:30:00 Autobus: B-7506 es creado.
+06-05-2024 22:30:01 Autobus: B-3332 es creado.
+06-05-2024 22:30:01 Avion: AC-8237 es creado.
+06-05-2024 22:30:02 Autobus: B-5453 es creado.
+06-05-2024 22:30:03 Autobus: B-9222 es creado.
+06-05-2024 22:30:04 Avion: HJ-8270 es creado.
+06-05-2024 22:30:04 Autobus: B-2633 es creado.
+06-05-2024 22:30:04 Autobus: B-4846 es creado.
+06-05-2024 22:30:05 Autobus: B-2463 es creado.
+06-05-2024 22:30:06 Avion: GH-6529 es creado.
+06-05-2024 22:30:06 Aeropuerto Madrid Avion IP-8246(27 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:30:06 Autobus: B-5539 es creado.
+06-05-2024 22:30:07 Autobus: B-4965 es creado.
+06-05-2024 22:30:07 Aeropuerto Barcelona Avion DF-7765(55 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:30:08 Autobus: B-7554 es creado.
+06-05-2024 22:30:08 Avion: QU-5183 es creado.
+06-05-2024 22:30:09 Autobus: B-7770 es creado.
+06-05-2024 22:30:09 Autobus: B-6499 es creado.
+06-05-2024 22:30:10 Aeropuerto Madrid Avion XD-7078(65 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:30:10 Aeropuerto Madrid Avion CV-4512(45 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:30:10 Autobus: B-7942 es creado.
+06-05-2024 22:30:10 Aeropuerto Barcelona Avion DF-7765(55 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:30:10 Avion: IL-648 es creado.
+06-05-2024 22:30:11 Autobus: B-6787 es creado.
+06-05-2024 22:30:12 Autobus: B-1336 es creado.
+06-05-2024 22:30:12 Autobus: B-4714 es creado.
+06-05-2024 22:30:12 Avion: UE-7346 es creado.
+06-05-2024 22:30:13 Autobus: B-1838 es creado.
+06-05-2024 22:30:14 Autobus: B-3684 es creado.
+06-05-2024 22:30:14 Avion: VP-8879 es creado.
+06-05-2024 22:30:14 Autobus: B-3350 es creado.
+06-05-2024 22:30:15 Autobus: B-3002 es creado.
+06-05-2024 22:30:16 Autobus: B-1621 es creado.
+06-05-2024 22:30:17 Avion: WO-8825 es creado.
+06-05-2024 22:30:17 Autobus: B-8101 es creado.
+06-05-2024 22:30:18 Autobus: B-3918 es creado.
+06-05-2024 22:30:18 Aeropuerto Madrid Avion DV-7948(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:30:18 Autobus: B-3976 es creado.
+06-05-2024 22:30:18 Avion: OB-7858 es creado.
+06-05-2024 22:30:19 Aeropuerto Barcelona Avion AC-8237(12 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:30:19 Autobus: B-6607 es creado.
+06-05-2024 22:30:19 Aeropuerto Madrid Avion HJ-8270(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:30:20 Autobus: B-373 es creado.
+06-05-2024 22:30:20 Aeropuerto Barcelona Avion GH-6529(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:30:20 Autobus: B-8703 es creado.
+06-05-2024 22:30:21 Autobus: B-8064 es creado.
+06-05-2024 22:30:21 Avion: KU-4325 es creado.
+06-05-2024 22:30:22 Autobus: B-4809 es creado.
+06-05-2024 22:30:22 Autobus: B-5850 es creado.
+06-05-2024 22:30:23 Autobus: B-2065 es creado.
+06-05-2024 22:30:23 Aeropuerto Barcelona Avion AC-8237(12 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:30:23 Aeropuerto Madrid Avion DV-7948(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:30:24 Autobus: B-6994 es creado.
+06-05-2024 22:30:24 Avion: GZ-6332 es creado.
+06-05-2024 22:30:24 Aeropuerto Barcelona Avion GH-6529(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:30:25 Aeropuerto Madrid Avion HJ-8270(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:30:25 Autobus: B-1 es creado.
+06-05-2024 22:30:25 Autobus: B-6350 es creado.
+06-05-2024 22:30:26 Autobus: B-5842 es creado.
+06-05-2024 22:30:26 Avion: QU-8855 es creado.
+06-05-2024 22:30:26 Aeropuerto Barcelona Avion QU-5183(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:30:27 Autobus: B-4083 es creado.
+06-05-2024 22:30:28 Autobus: B-8146 es creado.
+06-05-2024 22:30:28 Autobus: B-7221 es creado.
+06-05-2024 22:30:29 Avion: YS-6780 es creado.
+06-05-2024 22:30:29 Aeropuerto Madrid Avion IL-648(82 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:30:29 Autobus: B-5441 es creado.
+06-05-2024 22:30:30 Avion: WY-2298 es creado.
+06-05-2024 22:30:30 Autobus: B-6326 es creado.
+06-05-2024 22:30:31 Autobus: B-3462 es creado.
+06-05-2024 22:30:32 Avion: WS-4170 es creado.
+06-05-2024 22:30:32 Autobus: B-6343 es creado.
+06-05-2024 22:30:32 Aeropuerto Barcelona Avion QU-5183(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:30:33 Autobus: B-8650 es creado.
+06-05-2024 22:30:33 Autobus: B-8647 es creado.
+06-05-2024 22:30:34 Aeropuerto Barcelona Avion WO-8825(30 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:32:35 Autobus: B-6973 es creado.
+06-05-2024 22:32:35 Avion: DA-819 es creado.
+06-05-2024 22:32:36 Autobus: B-382 es creado.
+06-05-2024 22:32:37 Autobus: B-5294 es creado.
+06-05-2024 22:32:37 Avion: HA-4893 es creado.
+06-05-2024 22:32:37 Autobus: B-1877 es creado.
+06-05-2024 22:32:38 Autobus: B-4183 es creado.
+06-05-2024 22:32:39 Autobus: B-8107 es creado.
+06-05-2024 22:32:40 Avion: CS-941 es creado.
+06-05-2024 22:32:40 Autobus: B-8146 es creado.
+06-05-2024 22:32:40 Autobus: B-3118 es creado.
+06-05-2024 22:32:41 Autobus: B-9834 es creado.
+06-05-2024 22:32:42 Autobus: B-9876 es creado.
+06-05-2024 22:32:42 Avion: US-9881 es creado.
+06-05-2024 22:32:42 Autobus: B-142 es creado.
+06-05-2024 22:32:43 Autobus: B-7460 es creado.
+06-05-2024 22:32:44 Avion: MV-8732 es creado.
+06-05-2024 22:32:44 Autobus: B-2989 es creado.
+06-05-2024 22:32:44 Autobus: B-8358 es creado.
+06-05-2024 22:32:45 Autobus: B-1716 es creado.
+06-05-2024 22:32:46 Avion: GS-2989 es creado.
+06-05-2024 22:32:46 Autobus: B-8163 es creado.
+06-05-2024 22:32:47 Autobus: B-6305 es creado.
+06-05-2024 22:32:47 Autobus: B-894 es creado.
+06-05-2024 22:32:47 Aeropuerto Barcelona Avion DA-819(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:32:48 Avion: CR-3739 es creado.
+06-05-2024 22:32:48 Autobus: B-3651 es creado.
+06-05-2024 22:32:49 Autobus: B-7394 es creado.
+06-05-2024 22:32:50 Autobus: B-3379 es creado.
+06-05-2024 22:32:51 Autobus: B-4332 es creado.
+06-05-2024 22:32:51 Avion: MG-5254 es creado.
+06-05-2024 22:32:51 Autobus: B-2445 es creado.
+06-05-2024 22:32:52 Autobus: B-6795 es creado.
+06-05-2024 22:32:53 Autobus: B-4446 es creado.
+06-05-2024 22:32:53 Aeropuerto Barcelona Avion HA-4893(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:32:53 Aeropuerto Barcelona Avion DA-819(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:32:54 Avion: XU-6188 es creado.
+06-05-2024 22:32:54 Autobus: B-7179 es creado.
+06-05-2024 22:32:55 Autobus: B-8603 es creado.
+06-05-2024 22:32:55 Avion: UC-6956 es creado.
+06-05-2024 22:32:56 Autobus: B-1897 es creado.
+06-05-2024 22:32:56 Autobus: B-7697 es creado.
+06-05-2024 22:32:57 Autobus: B-1928 es creado.
+06-05-2024 22:32:58 Autobus: B-3870 es creado.
+06-05-2024 22:32:58 Avion: UL-937 es creado.
+06-05-2024 22:32:58 Aeropuerto Barcelona Avion CS-941(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:32:59 Aeropuerto Barcelona Avion US-9881(21 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:32:59 Autobus: B-2165 es creado.
+06-05-2024 22:33:00 Autobus: B-7523 es creado.
+06-05-2024 22:33:00 Aeropuerto Madrid Avion MV-8732(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:33:00 Autobus: B-2654 es creado.
+06-05-2024 22:33:01 Aeropuerto Barcelona Avion HA-4893(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:33:01 Avion: FO-477 es creado.
+06-05-2024 22:33:01 Autobus: B-5653 es creado.
+06-05-2024 22:33:02 Autobus: B-9746 es creado.
+06-05-2024 22:33:02 Avion: IL-1531 es creado.
+06-05-2024 22:33:02 Aeropuerto Barcelona Avion GS-2989(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:33:03 Autobus: B-3863 es creado.
+06-05-2024 22:33:03 Aeropuerto Barcelona Avion US-9881(21 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:33:03 Autobus: B-9745 es creado.
+06-05-2024 22:33:04 Aeropuerto Barcelona Avion CS-941(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:33:04 Autobus: B-7410 es creado.
+06-05-2024 22:33:04 Avion: PA-4554 es creado.
+06-05-2024 22:33:05 Aeropuerto Madrid Avion MV-8732(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:33:05 Autobus: B-6218 es creado.
+06-05-2024 22:33:06 Autobus: B-5106 es creado.
+06-05-2024 22:33:06 Autobus: B-8404 es creado.
+06-05-2024 22:33:07 Aeropuerto Barcelona Avion CR-3739(10 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:33:07 Avion: JY-5690 es creado.
+06-05-2024 22:33:07 Autobus: B-2255 es creado.
+06-05-2024 22:33:08 Autobus: B-6222 es creado.
+06-05-2024 22:33:08 Aeropuerto Barcelona Avion GS-2989(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:33:08 Avion: HM-4960 es creado.
+06-05-2024 22:33:09 Autobus: B-7656 es creado.
+06-05-2024 22:33:09 Aeropuerto Madrid Avion MG-5254(2 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:33:09 Autobus: B-5038 es creado.
+06-05-2024 22:33:10 Avion: NO-7433 es creado.
+06-05-2024 22:33:10 Autobus: B-3793 es creado.
+06-05-2024 22:33:11 Autobus: B-7383 es creado.
+06-05-2024 22:33:11 Aeropuerto Madrid Avion UC-6956(40 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:33:11 Aeropuerto Madrid Avion MG-5254(2 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:33:12 Autobus: B-9438 es creado.
+06-05-2024 22:33:12 Avion: IK-1439 es creado.
+06-05-2024 22:33:12 Aeropuerto Barcelona Avion CR-3739(10 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:33:12 Autobus: B-1356 es creado.
+06-05-2024 22:33:13 Aeropuerto Barcelona Avion UL-937(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:33:13 Aeropuerto Madrid Avion XU-6188(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:33:13 Autobus: B-8617 es creado.
+06-05-2024 22:33:13 Avion: IZ-1470 es creado.
+06-05-2024 22:33:14 Autobus: B-5892 es creado.
+06-05-2024 22:33:14 Aeropuerto Madrid Avion UC-6956(40 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:33:15 Autobus: B-9087 es creado.
+06-05-2024 22:33:16 Autobus: B-8371 es creado.
+06-05-2024 22:33:16 Avion: DD-9199 es creado.
+06-05-2024 22:33:16 Autobus: B-1579 es creado.
+06-05-2024 22:33:17 Autobus: B-7714 es creado.
+06-05-2024 22:33:17 Aeropuerto Madrid Avion XU-6188(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:33:18 Aeropuerto Barcelona Avion FO-477(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:33:18 Autobus: B-2694 es creado.
+06-05-2024 22:33:18 Aeropuerto Barcelona Avion UL-937(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:33:19 Avion: TG-6394 es creado.
+06-05-2024 22:33:19 Autobus: B-193 es creado.
+06-05-2024 22:33:20 Autobus: B-2533 es creado.
+06-05-2024 22:33:20 Avion: HP-8138 es creado.
+06-05-2024 22:33:21 Autobus: B-9158 es creado.
+06-05-2024 22:33:21 Aeropuerto Barcelona Avion IL-1531(0 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:33:22 Avion: IM-2504 es creado.
+06-05-2024 22:33:22 Autobus: B-265 es creado.
+06-05-2024 22:33:22 Aeropuerto Barcelona Avion FO-477(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:33:23 Autobus: B-6210 es creado.
+06-05-2024 22:33:23 Autobus: B-6772 es creado.
+06-05-2024 22:33:24 Aeropuerto Madrid Avion HM-4960(56 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:33:24 Avion: DR-732 es creado.
+06-05-2024 22:33:24 Autobus: B-7265 es creado.
+06-05-2024 22:33:25 Autobus: B-8409 es creado.
+06-05-2024 22:33:25 Aeropuerto Madrid Avion PA-4554(4 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:33:25 Aeropuerto Barcelona Avion NO-7433(33 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:33:25 Avion: WF-8104 es creado.
+06-05-2024 22:33:25 Autobus: B-1108 es creado.
+06-05-2024 22:33:26 Aeropuerto Barcelona Avion IL-1531(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:33:26 Autobus: B-3202 es creado.
+06-05-2024 22:33:27 Autobus: B-8445 es creado.
+06-05-2024 22:33:27 Avion: IZ-8790 es creado.
+06-05-2024 22:33:27 Aeropuerto Barcelona Avion DD-9199(106 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:33:28 Autobus: B-4110 es creado.
+06-05-2024 22:33:28 Aeropuerto Madrid Avion HM-4960(56 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:33:28 Autobus: B-3908 es creado.
+06-05-2024 22:33:29 Avion: YR-8370 es creado.
+06-05-2024 22:33:29 Aeropuerto Madrid Avion JY-5690(27 pasajeros) accede a Pista 1 para despegue
+06-05-2024 22:33:29 Aeropuerto Barcelona Avion IK-1439(7 pasajeros) accede a Pista 4 para despegue
+06-05-2024 22:33:29 Autobus: B-301 es creado.
+06-05-2024 22:33:30 Avion: HO-8210 es creado.
+06-05-2024 22:33:30 Autobus: B-5027 es creado.
+06-05-2024 22:33:31 Autobus: B-3864 es creado.
+06-05-2024 22:33:31 Autobus: B-5957 es creado.
+06-05-2024 22:33:32 Avion: VM-3546 es creado.
+06-05-2024 22:33:32 Autobus: B-6625 es creado.
+06-05-2024 22:33:33 Autobus: B-205 es creado.
+06-05-2024 22:33:33 Avion: CV-8493 es creado.
+06-05-2024 22:33:33 Autobus: B-8174 es creado.
+06-05-2024 22:33:34 Autobus: B-7797 es creado.
+06-05-2024 22:33:35 Avion: VN-3805 es creado.
+06-05-2024 22:33:35 Autobus: B-9277 es creado.
+06-05-2024 22:33:36 Aeropuerto Madrid Avion HP-8138(0 pasajeros) accede a Pista 4 para despegue
+06-05-2024 22:33:36 Autobus: B-5031 es creado.
+06-05-2024 22:33:36 Autobus: B-1584 es creado.
+06-05-2024 22:33:37 Autobus: B-9653 es creado.
+06-05-2024 22:33:38 Avion: EZ-1963 es creado.
+06-05-2024 22:33:38 Autobus: B-2728 es creado.
+06-05-2024 22:33:39 Autobus: B-933 es creado.
+06-05-2024 22:33:39 Aeropuerto Madrid Avion DA-819 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:33:39 Autobus: B-5766 es creado.
+06-05-2024 22:33:40 Aeropuerto Madrid Avion HP-8138(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:33:40 Avion: IV-9271 es creado.
+06-05-2024 22:33:40 Autobus: B-1702 es creado.
+06-05-2024 22:33:41 Autobus: B-2595 es creado.
+06-05-2024 22:33:41 Aeropuerto Madrid Avion IM-2504(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:33:41 Aeropuerto Madrid Avion HA-4893 accede a Embarque 3 para desembarcar 0 pasajeros
+06-05-2024 22:33:41 Avion: VQ-2694 es creado.
+06-05-2024 22:33:42 Autobus: B-5137 es creado.
+06-05-2024 22:33:42 Autobus: B-8011 es creado.
+06-05-2024 22:33:43 Autobus: B-1084 es creado.
+06-05-2024 22:33:44 Autobus: B-3353 es creado.
+06-05-2024 22:33:44 Avion: GW-6517 es creado.
+06-05-2024 22:33:44 Autobus: B-9380 es creado.
+06-05-2024 22:33:44 Aeropuerto Madrid Avion CS-941 accede a Embarque 3 para desembarcar 0 pasajeros
+06-05-2024 22:33:45 Autobus: B-4906 es creado.
+06-05-2024 22:33:46 Autobus: B-1982 es creado.
+06-05-2024 22:33:46 Aeropuerto Madrid Avion US-9881 accede a Embarque 2 para desembarcar 21 pasajeros
+06-05-2024 22:33:46 Avion: YS-8430 es creado.
+06-05-2024 22:33:47 Autobus: B-5051 es creado.
+06-05-2024 22:33:47 Aeropuerto Madrid Avion IM-2504(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:33:47 Autobus: B-8831 es creado.
+06-05-2024 22:33:48 Autobus: B-6014 es creado.
+06-05-2024 22:33:48 Avion: LK-2370 es creado.
+06-05-2024 22:33:49 Autobus: B-1969 es creado.
+06-05-2024 22:33:49 Aeropuerto Barcelona Avion EZ-1963(148 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:33:49 Avion: QX-2123 es creado.
+06-05-2024 22:33:49 Autobus: B-358 es creado.
+06-05-2024 22:33:50 Aeropuerto Madrid Avion DR-732(137 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:33:50 Autobus: B-1427 es creado.
+06-05-2024 22:33:51 Autobus: B-9206 es creado.
+06-05-2024 22:33:51 Aeropuerto Madrid Avion GS-2989 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:33:51 Avion: KS-8158 es creado.
+06-05-2024 22:33:52 Autobus: B-8323 es creado.
+06-05-2024 22:33:52 Autobus: B-8490 es creado.
+06-05-2024 22:33:53 Autobus: B-9369 es creado.
+06-05-2024 22:33:53 Aeropuerto Madrid Avion DR-732(137 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:33:54 Autobus: B-2919 es creado.
+06-05-2024 22:33:54 Avion: HF-1921 es creado.
+06-05-2024 22:33:54 Aeropuerto Barcelona Avion EZ-1963(148 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:33:54 Autobus: B-7086 es creado.
+06-05-2024 22:33:55 Autobus: B-1983 es creado.
+06-05-2024 22:33:55 Aeropuerto Madrid Avion WF-8104(44 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:33:55 Avion: XB-225 es creado.
+06-05-2024 22:33:55 Autobus: B-1801 es creado.
+06-05-2024 22:33:55 Aeropuerto Madrid Avion CR-3739 accede a Embarque 2 para desembarcar 10 pasajeros
+06-05-2024 22:33:56 Autobus: B-9285 es creado.
+06-05-2024 22:33:56 Avion: PA-9722 es creado.
+06-05-2024 22:33:57 Autobus: B-7865 es creado.
+06-05-2024 22:33:57 Aeropuerto Madrid Avion WF-8104(44 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:33:57 Autobus: B-8662 es creado.
+06-05-2024 22:33:58 Autobus: B-8755 es creado.
+06-05-2024 22:33:59 Autobus: B-7596 es creado.
+06-05-2024 22:33:59 Avion: KJ-5685 es creado.
+06-05-2024 22:34:00 Autobus: B-5915 es creado.
+06-05-2024 22:34:00 Avion: NE-7167 es creado.
+06-05-2024 22:34:00 Autobus: B-3675 es creado.
+06-05-2024 22:34:00 Aeropuerto Barcelona Avion IV-9271(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:34:01 Autobus: B-1633 es creado.
+06-05-2024 22:34:01 Aeropuerto Madrid Avion UL-937 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:34:01 Avion: QR-4222 es creado.
+06-05-2024 22:34:02 Autobus: B-3015 es creado.
+06-05-2024 22:34:02 Autobus: B-6397 es creado.
+06-05-2024 22:34:03 Autobus: B-1437 es creado.
+06-05-2024 22:34:04 Avion: ST-1323 es creado.
+06-05-2024 22:34:04 Autobus: B-9306 es creado.
+06-05-2024 22:34:04 Aeropuerto Barcelona Avion IV-9271(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:34:05 Autobus: B-321 es creado.
+06-05-2024 22:34:05 Avion: QO-984 es creado.
+06-05-2024 22:34:06 Autobus: B-4353 es creado.
+06-05-2024 22:34:06 Aeropuerto Madrid Avion IZ-8790(34 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:34:06 Autobus: B-180 es creado.
+06-05-2024 22:34:06 Avion: IX-7512 es creado.
+06-05-2024 22:34:07 Autobus: B-3997 es creado.
+06-05-2024 22:34:08 Autobus: B-9496 es creado.
+06-05-2024 22:34:09 Autobus: B-9475 es creado.
+06-05-2024 22:34:09 Avion: HU-1021 es creado.
+06-05-2024 22:34:10 Autobus: B-704 es creado.
+06-05-2024 22:34:10 Autobus: B-1908 es creado.
+06-05-2024 22:34:11 Aeropuerto Madrid Avion YS-8430(81 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:34:11 Autobus: B-4217 es creado.
+06-05-2024 22:34:12 Avion: SH-8889 es creado.
+06-05-2024 22:34:12 Autobus: B-3064 es creado.
+06-05-2024 22:34:13 Aeropuerto Barcelona Avion UC-6956 accede a Embarque 2 para desembarcar 40 pasajeros
+06-05-2024 22:34:13 Autobus: B-1875 es creado.
+06-05-2024 22:34:13 Aeropuerto Madrid Avion DA-819(8 pasajeros) accede a Pista 4 para despegue
+06-05-2024 22:34:14 Aeropuerto Madrid Avion IZ-8790(34 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:34:14 Autobus: B-2218 es creado.
+06-05-2024 22:34:14 Avion: KY-533 es creado.
+06-05-2024 22:34:14 Aeropuerto Madrid Avion FO-477 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:34:14 Autobus: B-7511 es creado.
+06-05-2024 22:34:14 Aeropuerto Barcelona Avion KJ-5685(20 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:34:15 Aeropuerto Madrid Avion YS-8430(81 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:34:15 Autobus: B-2147 es creado.
+06-05-2024 22:34:16 Avion: WU-1088 es creado.
+06-05-2024 22:34:16 Aeropuerto Barcelona Avion XU-6188 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:34:16 Autobus: B-3885 es creado.
+06-05-2024 22:34:17 Avion: KF-298 es creado.
+06-05-2024 22:34:17 Autobus: B-6906 es creado.
+06-05-2024 22:34:18 Autobus: B-5687 es creado.
+06-05-2024 22:34:18 Aeropuerto Madrid Avion DA-819(8 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:34:19 Autobus: B-6356 es creado.
+06-05-2024 22:34:19 Aeropuerto Barcelona Avion HM-4960 accede a Embarque 3 para desembarcar 56 pasajeros
+06-05-2024 22:34:19 Avion: VF-1926 es creado.
+06-05-2024 22:34:20 Aeropuerto Madrid Avion IL-1531 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:34:20 Autobus: B-6823 es creado.
+06-05-2024 22:34:20 Autobus: B-33 es creado.
+06-05-2024 22:34:21 Autobus: B-7711 es creado.
+06-05-2024 22:34:21 Aeropuerto Barcelona Avion KJ-5685(20 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:34:22 Avion: SL-4103 es creado.
+06-05-2024 22:34:22 Autobus: B-2982 es creado.
+06-05-2024 22:34:23 Autobus: B-5295 es creado.
+06-05-2024 22:34:23 Avion: JH-613 es creado.
+06-05-2024 22:34:24 Aeropuerto Barcelona Avion HU-1021(14 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:34:24 Autobus: B-7557 es creado.
+06-05-2024 22:34:25 Autobus: B-1678 es creado.
+06-05-2024 22:34:25 Avion: PB-4977 es creado.
+06-05-2024 22:34:25 Autobus: B-133 es creado.
+06-05-2024 22:34:25 Aeropuerto Madrid Avion YR-8370(19 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:34:26 Autobus: B-5268 es creado.
+06-05-2024 22:34:26 Avion: XZ-4630 es creado.
+06-05-2024 22:34:27 Autobus: B-1975 es creado.
+06-05-2024 22:34:28 Autobus: B-8345 es creado.
+06-05-2024 22:34:29 Autobus: B-9169 es creado.
+06-05-2024 22:34:29 Aeropuerto Madrid Avion KS-8158(0 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:34:29 Avion: IP-9992 es creado.
+06-05-2024 22:34:29 Aeropuerto Madrid Avion HA-4893(0 pasajeros) accede a Pista 4 para despegue
+06-05-2024 22:34:29 Aeropuerto Barcelona Avion HU-1021(14 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:34:29 Autobus: B-9974 es creado.
+06-05-2024 22:34:30 Autobus: B-4055 es creado.
+06-05-2024 22:34:30 Avion: AJ-2964 es creado.
+06-05-2024 22:34:31 Autobus: B-9443 es creado.
+06-05-2024 22:34:31 Autobus: B-3290 es creado.
+06-05-2024 22:34:32 Aeropuerto Madrid Avion YR-8370(19 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:34:32 Autobus: B-4779 es creado.
+06-05-2024 22:34:33 Avion: TN-756 es creado.
+06-05-2024 22:34:33 Autobus: B-606 es creado.
+06-05-2024 22:34:34 Autobus: B-9506 es creado.
+06-05-2024 22:34:34 Aeropuerto Barcelona Avion IM-2504 accede a Embarque 5 para desembarcar 0 pasajeros
+06-05-2024 22:34:34 Aeropuerto Madrid Avion KS-8158(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:34:34 Autobus: B-4226 es creado.
+06-05-2024 22:34:35 Autobus: B-2514 es creado.
+06-05-2024 22:34:35 Aeropuerto Madrid Avion HA-4893(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:34:35 Avion: UF-2950 es creado.
+06-05-2024 22:34:36 Autobus: B-8375 es creado.
+06-05-2024 22:34:37 Autobus: B-6607 es creado.
+06-05-2024 22:34:37 Aeropuerto Madrid Avion EZ-1963 accede a Embarque 2 para desembarcar 148 pasajeros
+06-05-2024 22:34:37 Autobus: B-8606 es creado.
+06-05-2024 22:34:38 Aeropuerto Madrid Avion VQ-2694(0 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:34:38 Autobus: B-1611 es creado.
+06-05-2024 22:34:38 Avion: KA-5082 es creado.
+06-05-2024 22:34:39 Autobus: B-4199 es creado.
+06-05-2024 22:34:39 Aeropuerto Barcelona Avion JH-613(24 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:34:40 Autobus: B-5866 es creado.
+06-05-2024 22:34:40 Aeropuerto Barcelona Avion HP-8138 accede a Embarque 4 para desembarcar 0 pasajeros
+06-05-2024 22:34:40 Avion: AF-694 es creado.
+06-05-2024 22:34:40 Autobus: B-3407 es creado.
+06-05-2024 22:34:41 Autobus: B-5412 es creado.
+06-05-2024 22:34:41 Aeropuerto Barcelona Avion JH-613(24 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:34:41 Avion: CO-2026 es creado.
+06-05-2024 22:34:42 Autobus: B-8139 es creado.
+06-05-2024 22:34:42 Aeropuerto Barcelona Avion UC-6956(4 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:34:43 Autobus: B-3019 es creado.
+06-05-2024 22:34:43 Aeropuerto Madrid Avion VQ-2694(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:34:43 Avion: SQ-174 es creado.
+06-05-2024 22:34:43 Autobus: B-7248 es creado.
+06-05-2024 22:34:44 Autobus: B-8118 es creado.
+06-05-2024 22:34:44 Avion: NC-1317 es creado.
+06-05-2024 22:34:45 Autobus: B-7220 es creado.
+06-05-2024 22:34:45 Aeropuerto Madrid Avion CR-3739(88 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:34:45 Autobus: B-9535 es creado.
+06-05-2024 22:34:46 Aeropuerto Madrid Avion QR-4222(64 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:34:46 Autobus: B-5962 es creado.
+06-05-2024 22:34:46 Aeropuerto Barcelona Avion UC-6956(4 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:34:47 Avion: KH-8295 es creado.
+06-05-2024 22:34:47 Autobus: B-1274 es creado.
+06-05-2024 22:34:48 Autobus: B-7853 es creado.
+06-05-2024 22:34:48 Autobus: B-3259 es creado.
+06-05-2024 22:34:49 Aeropuerto Madrid Avion IV-9271 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:34:49 Aeropuerto Madrid Avion CR-3739(88 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:34:49 Autobus: B-5725 es creado.
+06-05-2024 22:34:50 Avion: AO-5404 es creado.
+06-05-2024 22:34:50 Autobus: B-7839 es creado.
+06-05-2024 22:34:51 Autobus: B-7576 es creado.
+06-05-2024 22:34:52 Autobus: B-2284 es creado.
+06-05-2024 22:34:52 Avion: GB-2216 es creado.
+06-05-2024 22:34:52 Aeropuerto Madrid Avion QR-4222(64 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:34:52 Autobus: B-9212 es creado.
+06-05-2024 22:34:53 Avion: LU-2673 es creado.
+06-05-2024 22:34:53 Autobus: B-5995 es creado.
+06-05-2024 22:34:54 Autobus: B-9932 es creado.
+06-05-2024 22:34:54 Avion: JX-6036 es creado.
+06-05-2024 22:34:54 Aeropuerto Barcelona Avion WF-8104 accede a Embarque 2 para desembarcar 44 pasajeros
+06-05-2024 22:34:55 Autobus: B-5790 es creado.
+06-05-2024 22:34:55 Autobus: B-2483 es creado.
+06-05-2024 22:34:56 Aeropuerto Madrid Avion LK-2370(26 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:34:56 Avion: NQ-969 es creado.
+06-05-2024 22:34:56 Autobus: B-3097 es creado.
+06-05-2024 22:34:57 Autobus: B-5118 es creado.
+06-05-2024 22:34:58 Autobus: B-6992 es creado.
+06-05-2024 22:34:59 Avion: IJ-7872 es creado.
+06-05-2024 22:34:59 Autobus: B-5389 es creado.
+06-05-2024 22:34:59 Autobus: B-1027 es creado.
+06-05-2024 22:35:00 Aeropuerto Madrid Avion LK-2370(26 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:35:00 Avion: IQ-7937 es creado.
+06-05-2024 22:35:00 Aeropuerto Madrid Avion IX-7512(25 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:35:00 Autobus: B-1035 es creado.
+06-05-2024 22:35:01 Autobus: B-3213 es creado.
+06-05-2024 22:35:02 Autobus: B-6610 es creado.
+06-05-2024 22:35:02 Avion: ZZ-2076 es creado.
+06-05-2024 22:35:02 Autobus: B-5256 es creado.
+06-05-2024 22:35:03 Autobus: B-2037 es creado.
+06-05-2024 22:35:03 Avion: NV-5012 es creado.
+06-05-2024 22:35:03 Aeropuerto Madrid Avion QO-984(0 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:35:04 Autobus: B-6346 es creado.
+06-05-2024 22:35:05 Aeropuerto Madrid Avion IX-7512(25 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:35:05 Avion: TC-4384 es creado.
+06-05-2024 22:35:05 Autobus: B-9601 es creado.
+06-05-2024 22:35:06 Aeropuerto Madrid Avion KJ-5685 accede a Embarque 2 para desembarcar 20 pasajeros
+06-05-2024 22:35:06 Autobus: B-1467 es creado.
+06-05-2024 22:35:07 Aeropuerto Barcelona Avion HM-4960(210 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:35:07 Autobus: B-703 es creado.
+06-05-2024 22:35:07 Avion: ST-2708 es creado.
+06-05-2024 22:35:08 Aeropuerto Barcelona Avion DR-732 accede a Embarque 5 para desembarcar 137 pasajeros
+06-05-2024 22:35:08 Autobus: B-7876 es creado.
+06-05-2024 22:35:09 Autobus: B-5495 es creado.
+06-05-2024 22:35:09 Avion: VS-573 es creado.
+06-05-2024 22:35:09 Aeropuerto Madrid Avion QO-984(0 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:35:09 Autobus: B-1671 es creado.
+06-05-2024 22:35:10 Aeropuerto Barcelona Avion YS-8430 accede a Embarque 5 para desembarcar 81 pasajeros
+06-05-2024 22:35:10 Avion: VB-1934 es creado.
+06-05-2024 22:35:10 Autobus: B-7099 es creado.
+06-05-2024 22:35:10 Aeropuerto Madrid Avion DA-819 accede a Embarque 2 para desembarcar 8 pasajeros
+06-05-2024 22:35:10 Aeropuerto Barcelona Avion HM-4960(210 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:35:11 Autobus: B-3501 es creado.
+06-05-2024 22:35:12 Aeropuerto Barcelona Avion IZ-8790 accede a Embarque 6 para desembarcar 34 pasajeros
+06-05-2024 22:35:12 Autobus: B-4571 es creado.
+06-05-2024 22:35:12 Avion: SV-6710 es creado.
+06-05-2024 22:35:13 Autobus: B-7235 es creado.
+06-05-2024 22:35:13 Autobus: B-3964 es creado.
+06-05-2024 22:35:13 Aeropuerto Madrid Avion PA-9722(8 pasajeros) accede a Pista 3 para despegue
+06-05-2024 22:35:14 Autobus: B-6468 es creado.
+06-05-2024 22:35:14 Aeropuerto Barcelona Avion IQ-7937(60 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:35:14 Autobus: B-8771 es creado.
+06-05-2024 22:35:15 Avion: WG-4327 es creado.
+06-05-2024 22:35:15 Autobus: B-8557 es creado.
+06-05-2024 22:35:16 Autobus: B-5222 es creado.
+06-05-2024 22:35:17 Autobus: B-5586 es creado.
+06-05-2024 22:35:17 Aeropuerto Barcelona Avion KS-8158 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:35:17 Autobus: B-7320 es creado.
+06-05-2024 22:35:18 Avion: NA-8474 es creado.
+06-05-2024 22:35:18 Autobus: B-1692 es creado.
+06-05-2024 22:35:18 Aeropuerto Madrid Avion HU-1021 accede a Embarque 2 para desembarcar 14 pasajeros
+06-05-2024 22:35:19 Aeropuerto Madrid Avion CS-941(116 pasajeros) accede a Pista 4 para despegue
+06-05-2024 22:35:19 Avion: RD-2287 es creado.
+06-05-2024 22:35:19 Autobus: B-7963 es creado.
+06-05-2024 22:35:20 Autobus: B-5905 es creado.
+06-05-2024 22:35:20 Aeropuerto Barcelona Avion IQ-7937(60 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:35:20 Autobus: B-8338 es creado.
+06-05-2024 22:35:21 Aeropuerto Barcelona Avion LU-2673(0 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:35:21 Aeropuerto Madrid Avion PA-9722(8 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:35:21 Autobus: B-8562 es creado.
+06-05-2024 22:35:21 Avion: YU-1988 es creado.
+06-05-2024 22:35:22 Autobus: B-781 es creado.
+06-05-2024 22:35:22 Aeropuerto Madrid Avion CS-941(116 pasajeros) entra a la aerovia Madrid-Barcelona
+06-05-2024 22:35:23 Aeropuerto Madrid Avion HA-4893 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:35:23 Autobus: B-1072 es creado.
+06-05-2024 22:35:23 Autobus: B-3137 es creado.
+06-05-2024 22:35:24 Autobus: B-5766 es creado.
+06-05-2024 22:35:24 Avion: KB-495 es creado.
+06-05-2024 22:35:25 Autobus: B-5333 es creado.
+06-05-2024 22:35:25 Aeropuerto Barcelona Avion VQ-2694 accede a Embarque 2 para desembarcar 0 pasajeros
+06-05-2024 22:35:25 Autobus: B-3192 es creado.
+06-05-2024 22:35:25 Aeropuerto Barcelona Avion LU-2673(0 pasajeros) entra a la aerovia Barcelona-Madrid
+06-05-2024 22:35:26 Autobus: B-870 es creado.
+06-05-2024 22:35:26 Avion: DW-5838 es creado.
+06-05-2024 22:35:27 Autobus: B-215 es creado.
+06-05-2024 22:35:27 Autobus: B-9221 es creado.
+06-05-2024 22:35:28 Aeropuerto Madrid Avion GS-2989(43 pasajeros) accede a Pista 2 para despegue
+06-05-2024 22:35:28 Autobus: B-9277 es creado.

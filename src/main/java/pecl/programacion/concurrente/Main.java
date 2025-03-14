@@ -1,25 +1,21 @@
 package pecl.programacion.concurrente;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.net.InetAddress;
-import java.net.Socket;
 import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Random;
-import javax.swing.*;
 import java.util.concurrent.locks.ReadWriteLock;
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import pecl.programacion.distribuida.ImpInterfaceAeropuerto;
+import java.util.concurrent.Semaphore;
 
 public class Main extends javax.swing.JFrame {
     //Attributes
     LogSistema logSistema = new LogSistema();
-    Aeropuerto aeropuertoMadrid = new Aeropuerto("Madrid", this, logSistema);
-    Aeropuerto aeropuertoBarcelona = new Aeropuerto("Barcelona", this, logSistema);
+    Semaphore detencion = new Semaphore(1);
+    Aeropuerto aeropuertoMadrid = new Aeropuerto("Madrid", this, logSistema, detencion);
+    Aeropuerto aeropuertoBarcelona = new Aeropuerto("Barcelona", this, logSistema, detencion);
+    Random r = new Random();
     
     ReadWriteLock lockEstacionamientoMadrid = new ReentrantReadWriteLock();
     ReadWriteLock lockEstacionamientoBarcelona = new ReentrantReadWriteLock();
@@ -51,7 +47,7 @@ public class Main extends javax.swing.JFrame {
     ReadWriteLock lockTransfersAeropuertoMadrid = new ReentrantReadWriteLock();
     ReadWriteLock lockTransfersAeropuertoBarcelona = new ReentrantReadWriteLock();
     
-    Random r = new Random();
+    
     
     public Main(){
         initComponents();
@@ -66,8 +62,9 @@ public class Main extends javax.swing.JFrame {
             lockGatesMadrid[i] = new ReentrantReadWriteLock();
             lockGatesBarcelona[i] = new ReentrantReadWriteLock();
         }
+        
     }
-
+    
     //GETTERS
     public String getjTextFieldAEstacionamientoBarcelona() {
         String text;
@@ -1495,6 +1492,10 @@ public class Main extends javax.swing.JFrame {
 
     private void jButtonPausarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPausarActionPerformed
         // TODO add your handling code here:
+        try {
+            detencion.acquire();
+        } catch (InterruptedException e){
+        }
     }//GEN-LAST:event_jButtonPausarActionPerformed
 
     private void jTextFieldAeroviaBarcelonaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldAeroviaBarcelonaActionPerformed
@@ -1507,6 +1508,7 @@ public class Main extends javax.swing.JFrame {
 
     private void jButtonRenaudarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRenaudarActionPerformed
         // TODO add your handling code here:
+        detencion.release();
     }//GEN-LAST:event_jButtonRenaudarActionPerformed
 
     private void jTextFieldGate1MadridActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldGate1MadridActionPerformed
@@ -1544,35 +1546,35 @@ public class Main extends javax.swing.JFrame {
     private void jButtonIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIniciarActionPerformed
         // TODO add your handling code here:
         Thread aviones = new Thread(new Runnable() {
+            @Override
             public void run() {
-                for (int i = 0; i < 8000; i++) {
-                    try{
+                try{;
+                    for (int i = 0; i < 8000; i++) {
+                        Avion avion = new Avion(aeropuertoMadrid, aeropuertoBarcelona, logSistema);
+                        avion.start();
                         Thread.sleep(r.nextInt(3000-1000+1)+1000);
-                    } catch (InterruptedException e){
                     }
-                    Avion avion = new Avion(aeropuertoMadrid, aeropuertoBarcelona, logSistema);
-                    avion.start();
-                    
+                } catch (InterruptedException e){
                 }
             }
         });
         
         Thread autobuses = new Thread(new Runnable() {
+            @Override
             public void run() {
-                for (int i = 0; i < 4000; i++) {
-                    Autobus autobus = new Autobus(aeropuertoMadrid, aeropuertoBarcelona, logSistema);
-                    autobus.start();
-                    try{
+                try{
+                    for (int i = 0; i < 4000; i++) {
+                        Autobus autobus = new Autobus(aeropuertoMadrid, aeropuertoBarcelona, logSistema);
+                        autobus.start();
                         Thread.sleep(r.nextInt(1000-500+1)+500);
-                    } catch (InterruptedException e){
                     }
+                } catch (InterruptedException e){
                 }
             }
         });
         
         autobuses.start();
         aviones.start();
-        
     }//GEN-LAST:event_jButtonIniciarActionPerformed
 
     private void jTextFieldRodajeBarcelonaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRodajeBarcelonaActionPerformed
@@ -1590,12 +1592,11 @@ public class Main extends javax.swing.JFrame {
             ImpInterfaceAeropuerto objMadrid = new ImpInterfaceAeropuerto(aeropuertoMadrid);
             ImpInterfaceAeropuerto objBarcelona = new ImpInterfaceAeropuerto(aeropuertoBarcelona);
             
-            Registry registry = LocateRegistry.createRegistry(1099); //Arranca rmiregistry local en el puerto 1099
+            Registry registry = LocateRegistry.createRegistry(1099); 
             
-            Naming.rebind("//127.0.0.1/ObjetoAeropuertoMadrid",objMadrid);   //rebind sólo funciona sobre una url del equipo local 
+            Naming.rebind("//127.0.0.1/ObjetoAeropuertoMadrid",objMadrid);    
             Naming.rebind("//127.0.0.1/ObjetoAeropuertoBarcelona",objBarcelona);
             
-            System.out.println("Ha quedado registrado");
         } catch (Exception e) {
         }
     }//GEN-LAST:event_jButtonRegistrarActionPerformed
@@ -1637,7 +1638,6 @@ public class Main extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Main().setVisible(true);
-                
                 
             }
         });
