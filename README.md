@@ -5,7 +5,7 @@
 
 A simulation of airport operations developed in Java, modeling and visualizing the evolution of an airport over time. This project was developed as part of an academic assignment and focuses on the dynamics of arrivals, departures, and airport resource management.
 
---
+---
 
 ### 🧩 Project Structure
 
