@@ -8,5 +8,20 @@ A simulation of airport operations developed in Java, modeling and visualizing t
 ---
 
 ### 🧩 Project Structure
+Simulador-Aeropuerto/
+├── src/
+│ └── main/
+│ └── java/
+│ └── pecl/
+│ └── programacion/
+│ ├── [Java Classes]
+├── evolucionAeropuerto.txt
+├── pom.xml
+└── .gitignore
 
+- `src/main/java/pecl/programacion/`: Contains the main simulation classes.
+- `evolucionAeropuerto.txt`: Output file showing the simulated airport evolution.
+- `pom.xml`: Maven configuration file for project dependencies and build process.
+
+---
 
