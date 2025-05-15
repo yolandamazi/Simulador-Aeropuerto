@@ -1,4 +1,4 @@
-<h2 align="center">✈️ Airport Simulator</h2>
+<h1 align="center">✈️ Airport Simulator</h1>
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
