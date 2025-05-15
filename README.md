@@ -7,6 +7,6 @@ A simulation of airport operations developed in Java, modeling and visualizing t
 
 ---
 
-## 🧩 Project Structure
+### 🧩 Project Structure
 
 
